@@ -1,0 +1,188 @@
+\chapter{Eingabemethoden}
+\label{cha:Eingabe}
+
+Die meisten Interaktionen mit elektronischen Geräten jeder Art finden durch den Einsatz unserer Hände statt. Das reicht von der einfachen Bedienung von Geräten (z.B. Einschalten eines Computers) bis hin zur Steuerung von Abläufen mittels Gestik (z.B. Liederwechsel durch eine Wischgestik mit der Hand, die dann von einer Software erkannt und in einen Befehl umgewandelt werden kann). Doch nicht immer gibt es die Möglichkeit mit Hilfe der Hände zu interagieren. Beispielsweise beim Autofahren sollen beide Hände am Lenkrad bleiben, bei anstrengenden und präzisen Arbeiten an Maschinen müssen oft beide Hände benutzt werden oder aber auch für Menschen mit Tetraplegie bzw. Tetraparese, die ihre Hände und Arme nicht oder oft nur sehr eingeschränkt benutzen können, sind alternative Interaktionsmöglichkeiten äußerst interessant. Aus diesem Grund beschäftigt sich dieses Kapitel mit den einzelnen alternativen Eingabemethoden, die es ermöglichen auch ohne den Einsatz von den Händen mit einem System interagieren zu können. Welche Vor- und Nachteile, gesonderte Rahmenbedingungen und welche Einsatzgebiete es im Detail zu den einzelnen Methoden gibt, werden in Kapitel~\ref{cha:Vergleich} näher erläutert. 
+
+%%%%%%%%%%%%%%%%%%%%%%% SPRACHSTEUERUNG %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Sprachsteuerung}
+
+Eine Alternative zur Interaktion mit den Händen stellt die Steuerung mit Hilfe der menschlichen Stimme dar. Ein Spracherkennungssystem soll im optimalen Fall das Gesprochene genau so gut erkennen und verstehen können wie ein Mensch. Da jeder anders spricht bzw. es auch syntaktische Unterschiede gibt, kann ein System sich an das menschliche Verstehen allerdings nur annähern. Oft werden daher in der Praxis die Systeme speziell für einzelne Szenarien entwickelt bzw. angepasst. 
+\newlinew \newline
+Wird der Inhalt des Gesprochen analysiert und zur Interaktion verwendet, wird von der Spracherkennung gesprochen. Hier gibt es zwei Ansätze, damit das System das Gesprochene versteht:
+\begin{itemize}
+      \item Mustervergleich
+      \item Statistische Spracherkennung
+\end{itemize}
+
+Bei einem Mustervergleich werden die einzelnen Wörter verwendet, um diese mit bereits abgespeicherten Mustern und Begriffen zu vergleichen. Jenes Wort, dass dem Eingabewort am ähnlichsten ist, wird verwendet.
+Hingegen bei der statistischen Spracherkennung werden Beschreibungen von Lauten und Wörtern verwendet. Darüber hinaus werden Statistiken verwendet, die Wahrscheinlichkeiten von Wortfolgen beinhalten \cite{KaufmannPfisterSprache}. 
+\newline
+\newline
+%technischer aspekt
+Bevor das Signal im gesamten Prozess bei dem Analyseschritt angelangt, laufen vorher noch einige Schritte ab. Wenn eine Person etwas spricht werden die analogen Wellen durch elektroakustische Wandler (zum Beispiel ein Mikrophon) in ein elektrisches Signal (Sprachsignal) umgewandelt, damit der Computer diese interpretieren und weiterverarbeiten kann. Auf den gespeicherten Daten werden anschließend verschiedenste Filter angewendet, um störende Signale wie zum Beispiel Hintergrundgeräusche oder Pausen während des Sprechens zu entfernen.Erst dann kann im nächsten Schritt durch eine der bereits beschriebenen Methoden das System das Gesprochene analysieren und so den Sinn erfassen. Ist der Inhalt des Gesprochenen bekannt, kann dieser in einen Text und somit einen Befehl umgewandelt und dadurch der Computer bzw. das Programm gesteuert werden \cite{KaufmannPfisterSprache}.
+\newline \newline
+Es gibt viele Faktoren, die einen Einfluss auf das Sprachsignal haben. So hat jeder Mensch neben seiner einzigartigen Stimme einen unterschiedlichen Dialekt, Sprachgewohnheiten, Emotionen in der Sprach, Pausenangewohnheiten und eine verschiedene Sprechgeschwindigkeit \cite{KaufmannPfisterSprache}. Diese Komponente sind nicht nur wichtig für die Erkennung was gesprochen wird, sondern viel mehr wer spricht (Sprecherekennung).
+\newline \newline
+%Sprechererkennung
+Neben der Spracherkennung gibt es noch die Sprechererkennung, die für die Interaktion mit einem System relevant sein kann. Um erkennen zu können welche Person gerade spricht, muss es Referenzdaten im System geben, die mit dem aktuellen Signal verglichen werden können. Dies geschieht entweder wenn die Person ein bestimmtes Singalwort spricht, dass mit dem abgespeicherten Wort verglichen wird, oder wenn das Sprachsignal lange genug ist, kann auf Grund von statistischen Merkmalen eine Übereinstimmung gefunden werden \cite{KaufmannPfisterSprache}. 
+\newline \newline
+%Interaktion!
+Kommunikation durch Sprache ist eines der leichtesten, wenn nicht sogar intuitivsten Mittel zur Verständigung. Daher sollte auch die Interaktion mit einem Computer diesen hohen Standards entsprechen. Allerdings ist im Gegensatz zur gewohnten Face-to-Face-Kommunikation das Gegenüber im Bezug auf Spracherkennung kein intelligenter Gesprächspartner. Ein Computer kann nur schwer lange und komplizierte Sätze und Gedankengänge mitverfolgen und daraus schlecht die Kernaussage zu ziehen. Daher muss dem System verständlich gemacht werden, wann es zuhören soll \cite{SpeechInteraction}.
+Zwei gängige Methoden für den Start zur Interaktion sind:
+\begin{itemize}
+      \item das Drücken einer Starttaste
+      \item das Aussprechen eines Aktivierungswortes
+\end{itemize}
+Da das drücken eines Startknopfes die Hilfe der Hände verwendet, steht hier das Aktivierungswort im Vordergrund.
+Durch das Wort 'Alexa' wird beispielsweise der Amazon Echo %
+\footnote{https://www.amazon.com/Amazon-Echo-Bluetooth-Speaker-with-WiFi-Alexa/dp/B00X4WHP5E}
+%
+aktiviert. Bei Amazon Echo handelt es sich um
+ein Sprachinteraktionssystem, dass beispielsweise Musik abspielen, den Einkauf bestellen oder auch Nachrichten und Wetterbeiträge zur Verfügung stellen kann.
+Im Gegensatz zur Benutzung von Amazon Echo, gibt muss bei der Sprachsteuerung von Apple (Siri)%
+\footnote{https://www.apple.com/ios/siri/}
+%
+ das System erst auf die eigene Stimme eingestellt, also kalibriert werden. Das Aktivierungswort 'Hey Siri' muss drei Mal einzeln und zwei Mal in einem Satz eingesprochen werden, damit diese Funktion beispielsweise am iPhone freigeschaltet wird. Anschließend können ebenfalls Wetter oder Nachrichtendaten abgefragt werden, aber auch Anrufe oder Nachrichten können mit Hilfe der Stimme gesteuert werden. 
+ 
+Sobald das System bereit ist den Input aufzunehmen lässt sich zusammenfassend folgendes festhalten, damit eine erfolgreiche Interaktion mit dem System geschehen kann:
+\begin{itemize}
+      \item keine zu große Distanz zum Mikrophon beachten,
+      \item laut und deutlich zu sprechen und
+			\item nicht zu schnell zu sprechen.
+\end{itemize}
+
+Zusammenfassend lässt sich sagen, dass die Sprachinteraktion mit dem Computer auf Benutzersicht noch einige Verbesserung aufweist, damit die Bedienung natürlicher und intuitiver wird und der einer Face-to-Face-Kommunikation näher kommt.
+
+%%%%%%%%%%%%%%%%%%%%%%% AUGENSTEUERUNG %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Augensteuerung}
+
+Eine weitere alternative Interaktionsmöglichkeit stellt die Steuerung mit Hilfe der Augen dar. Eye-Tracking-Systeme werden verwendet um die Augenbewegungen zu verfolgen. Gleichzeitig wandelt eine Software die Augenbewegungen in einen Mauszeiger um, um so mit dem System interagieren zu können. 
+\newline \newline
+Um die Augenbewegungen nachvollziehen zu können, werden sowohl ein Infrarotlichtstrahl, als auch eine Videokamera auf das Auge fokussiert. Eine Software analysiert die Bewegungen im Hintergrund und kann erkennen wo der Fokus auf dem Bildschirm liegt. Für die Umrechnung ist überdies wichtig, dass die Position des Kopfes vom Interaktionssystem erkannt wird \cite{NielsenPernice}.
+\newline \newline
+Der Teilbereich des Auges bzw. des menschlichen Sehens, der für die Augensteuerung relevant ist, ist die Unterteilung in peripheres und foveales Sehen. Das foveale Sehen beinhaltet jenen Teil, den das menschliche Auge als scharfen Bildausschnitt wahrnimmt, also auf welchen Ausschnitt es fokussiert. Hingegen enthält das periphere Sehen den Großteil unser Sehwahrnehmung, das beinhaltet jene Bereiche, die nicht fokussiert sind \cite{NielsenPernice}. Daher ist das foveale Sehen für die Augensteuerung relevant.
+\newline \newline
+Nielsen und Pernice \cite{NielsenPernice} unterscheiden beim menschlichen Sehen zusätzlich zwischen Fixation und Sakkaden. Das menschliche Auge bzw. der Blick bewegt sich nicht kontinuierlich, sondern es handelt sich um es handelt sich um schelle Bewegungen mit Pausen dazwischen. Dies geschieht so schnell, dass es im Alltag nicht bewusst wahrgenommen wird. Wenn das Auge auf einem bestimmten Punkt ruht spricht man von Fixation. Die schnellen Zwischenbewegungen von einer Fixation zur nächsten werden Sakkaden genannt. Die Schwierigkeit der Eye-Tracking-Systeme und der Augensteuerungssoftware besteht darin, diese Fixationen zu erkennen, da diese meist zwischen einer hundertstel und einer zehntel Sekunde liegen \cite{NielsenPernice}.
+%abbildung 2
+\begin{figure}
+\centering
+\includegraphics[width=.7\textwidth]{eyeTrackingSystems}
+\caption{Hierachie von Eye-Tracking-Systemen \cite{Duchowski}.}
+\label{fig:eyeTrackingSystems}
+\end{figure}
+\newline \newline
+Wie in Abb.~\ref{fig:eyeTrackingSystems} dargestellt, unterscheidet Duchowski \cite{Duchowski} zwischen interaktiven und diagnostischen Systemen. Da bei diagnostischen Systemen keine direkte Interaktion stattfindet, sondern die Augenbewegungen aufgezeichnet und im Nachhinein ausgewertet werden, sind für die Analyse von Interaktionsmöglichkeiten ausschließlich interaktive Systeme relevant. 
+
+Interaktive Systeme lassen sich wiederum in zwei Bereiche teilen. Selektive Systeme benutzen den Blickpunkt als analoges Eingabegerät, während Blickkontingentsysteme für die Darstellung von komplexen Displays verwendet werden. 
+\newline \newline
+Abgesehen davon, wie die Daten aufgezeichnet werden bzw. was aufgezeichnet wird, ist die Unterscheidung zwischen den Eye-Tracking-Systeme relevant. Diese können in intrusive und nicht-intrusive Systeme unterteilt werden. Intrusive Eye-Tracker haben einen direkten Kontakt mit den Anwendern (z.B durch Kontaktlinsen). Nicht-intrusive Eye-Tracking-Systeme hingegen messen die Blicke mit Hilfe von einer oder mehreren Kameras. 
+\newline \newline
+In der Praxis werden eine Vielzahl von verschiedensten Eye-Tracking-Systemen als Basis für die Augensteuerung verwendet. Die Unternehmen Tobii %
+\footnote{http://www.tobii.com/group/}
+%
+und SensoMotoricInsturmens (SMI) %
+\footnote{https://www.smivision.com/}
+%
+sind Spitzenreiter auf diesem Gebiet und haben eine umfangreiche Produktpalette bzw. Anwendungsgebiete. 
+\begin{figure}
+\centering\small
+\setlength{\tabcolsep}{0mm}	% alle Spaltenränder auf 0mm
+\begin{tabular}{c@{\hspace{-15mm}}c} % mittlerer Abstand = 12mm
+  \includegraphics[width=.6\textwidth]{TobiiPro_Glasses} &
+  \includegraphics[width=.6\textwidth]{Tobii_Spectrum}
+\\
+  (a) & (b)
+\\[5pt]	%vertical extra spacing (4 points)
+  \includegraphics[width=.4\textwidth]{SMIRED}
+\\
+  (c)
+\end{tabular}
+%
+\caption{Übersicht über die Eye-Tracking-Systeme von Tobii und SMI \newline
+Tobii Pro Glasses 2 \cite{TobiiGlasses}~(a), Tobii Pro Spectrum \cite{TobiiSpectrum}~(b), 
+SMI Red250mobile \cite{SMIRED} ~(c).}
+\label{fig:Tobii}
+\end{figure}
+
+In Abb.~\ref{fig:Tobii}(a) ist eine tragbares Eye-Tracking-System zu sehen. Dieses ist so gestaltet worden, um ein möglichst natürliches Nutzungsverhalten zu erzielen. Es müssen keine Voreinstellungen vorgenommen werden, die Brille kann sofort benutzt werden. Dieses Produkt gibt einen Einblick über das Nutzungsverhalten und weniger über die Interaktion mit einem zusätzlichen System selbst und ist daher als Beispiel für ein instrusives System angeführt. Bei Tobii Pro Spectrum (Abb.~\ref{fig:Tobii}(b)) handelt es sich um ein nicht-intrusives System, dass die Blickdaten mit einer Geschwindigkeit von bis zu 600Hz aufnimmt. Das Unternehmen SMI hat, wie in Abb.~\ref{fig:Tobii}(c) zu sehen ist, ein mobiles Eye-Tracking-System entwickelt, das die Bewegungen mit bis zu 250Hz aufzeichnen kann. 
+Alle diese Systeme verwenden das Prinzip von Fixation und Sakkaden des Auges, um die Augenbewegungen nachvollziehen zu können.
+\newline \newline
+Zusammenfassend kann gesagt werden, dass es viele verschiedene Methoden gibt, um die Augenbewegungen aufzuzeichnen. Für die Interaktion mit einer Anwendung bzw. einem System sind interaktive Eye-Tracking-Systeme für die Nachvollziehbarkeit der Augenbewegungen und eine Software für die Umrechnung in Mausbewegungen relevant.
+
+%%%%%%%%%%%%%%%%%%%%%%% Kinn- Mundsteuerung %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Kinn-/Mundsteuerung}
+
+\begin{figure}
+\centering\small
+\setlength{\tabcolsep}{0mm}	% alle Spaltenränder auf 0mm
+\begin{tabular}{c@{\hspace{15mm}}c} % mittlerer Abstand = 12mm
+  \includegraphics[width=.3\textwidth]{moso_kinn} &
+  \includegraphics[width=.3\textwidth]{smilesmart_kinn}
+\\
+  (a) & (b)
+\\[5pt]	%vertical extra spacing (4 points)
+  \includegraphics[width=.3\textwidth]{sensory_kinn}
+\\
+  (c)
+\end{tabular}
+%
+\caption{Verschiedene Kinnsteuerungen \newline
+Moso® Kinnsteuerung \cite{MOSO}~(a), Smile Smart Kinnsteuerung \cite{SMILESMART}~(b), 
+Sensory Kinnsteuerung \cite{SENSORY} ~(c).}
+\label{fig:kinn}
+\end{figure}
+
+
+Eine weitere alternative zur Interaktion stellen sowohl die Kinn- und Mundsteuerung dar. Da diese auf einem ähnlichen Prinzip basieren bzw. oft in Kombination eingesetzt werden, sind sie hier gemeinsam angeführt.
+\newline \newline
+Es gibt unterschiedliche Ausführungen einer Kinnsteuerung. Wie in Abb.~\ref{fig:kinn}(a) zu sehen ist verwendet das Unternehmen moso® %
+\footnote{http://www.moso-gmbh.de/}
+%
+einen Joystick und zwei Tasten für die Interaktion. Der Joystick besteht aus einem kleinen weichen Ball. Die zwei Tasten sind links und rechts vom Joystick angebracht. Der Joystick kann sich in alle Himmelsrichtungen bewegen und kann so entweder als Mauszeiger oder zur Steuerung eines Rollstuhls genutzt werden. Die beiden Tasten können als linke und rechte Maustasten verwendet werden \cite{MOSO}.
+\newline
+Abb.~\ref{fig:kinn}(b) zeigt die Version der Firma Smile Smart Technology %
+\footnote{https://smilesmart-tech.com/}
+%
+. Diese besteht aus einem Mini Rollstuhl Joystick, der auf einer schwenkbaren Halterung montiert ist \cite{SMILESMART}.
+\newline
+Die Kinnsteuerung des Unternehmens Sensory Guru %
+\footnote{http://www.sensoryguru.com/}
+%
+weißt im Vergleich zu den anderen beiden keinen Ball. Wie in Abb.~\ref{fig:kinn}(c) dargestellt, gibt es einen Joystick mit einer Mulde für das Kinn. Mit einer Bewegung nach links oder rechts können die beiden äußeren Sensoren aktiviert werden \cite{SENSORY}. 
+\newline \newline
+%%Mundsteuerung
+Das Prinzip der Mundsteuerung ist ähnlich dem der Kinnsteuerung. Durch die verschiedenen Interaktionsmöglichkeiten, die durch den Einsatz des Mundes möglich sind, wird versucht eine Interaktion mit beispielsweise einem Computer möglich zu machen.
+\newline \newline
+Bei der in Abb.~\ref{fig:mund}(a) gezeigte Mundsteuerung handelt es sich um die IntegraMouse Plus, die mit Hilfe des Unternehmens LIFEtool %
+\footnote{http://www.lifetool.at/startseite/}
+%
+entwickelt wurde. Die IntegraMouse Plus wird durch nippen, pusten und bewegen des Mundes gesteuert. Wird die Maus mit einem Computer verbunden so kann durch ein Nippen ein Linksklick erzeugt werden, durch Pusten ein Rechtsklick und durch das Bewegen des Mundstückes kann die Richtung bzw. der Cursor verändert werden \cite{INTEGRA_VIDEO}. 
+Ähnlich wie bei der IntegraMouse Plus werden bei dem mundgesteuerten Gamecontroller der Firma QuadStick %
+\footnote{http://www.quadstick.com/}
+%
+, die in Abb.~\ref{fig:mund}(b) zu sehen ist, auch nippen, pusten und die Bewegungen des Mundes zur Interaktion verwendet. Dieses Modell hat allerdings anstatt einer vier Nipp bzw. Pustsensoren, um einen regulären Gamecontroller besser imitieren zu können \cite{QUADSTICK}.
+\newline \newline
+Zusammenfassend kann gesagt werden, dass es bei jeder Steuerung ein Element gibt, dass um bis zu 360° drehbar ist und als Cursor einer Maus, als Joystick oder als Richtungssteuerungselement für einen Rollstuhl genutzt werden kann. Darüber hinaus gibt es häufig zwei Tasten mit der die Bedienung eines Menüs oder die rechte und linke Maustasten ersetzt werden können.
+
+\begin{figure}
+\centering\small
+\setlength{\tabcolsep}{0mm}	% alle Spaltenränder auf 0mm
+\begin{tabular}{c@{\hspace{15mm}}c} % mittlerer Abstand = 12mm
+  \includegraphics[width=.3\textwidth]{IntegraMouse} &
+  \includegraphics[width=.4\textwidth]{quadstick}
+\\
+  (a) & (b)
+\end{tabular}
+%
+\caption{Verschiedene Mundsteuerungen: \newline
+IntegraMouse Plus \cite{INTEGRA}~(a) und QuadStick Gamecontroller \cite{QUADSTICK}~(b)}
+\label{fig:mund}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%%%%% Gehirnaktiviät %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Steuerung durch Gehirnaktivität}
+
+%%%%%%%%%%%%%%%%%%%%%%% Myoelektrik %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Muskelsteuerung (Myoelektrische Signale)}
+

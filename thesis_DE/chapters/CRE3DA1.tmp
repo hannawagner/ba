@@ -127,7 +127,6 @@ In diesem Abschnitt werden die Kinn-, Mund-, Kopf- sowie Fußsteuerung näher er
 
 %%%%%%%%% Kinnsteuerung %%%%%%%%%
 \subsection{Kinnsteuerung}
-\label{cha:Kinnsteuerung}
 
 Bei der Kinnsteuerung werden mit Hilfe des Kinns Bewegungen ausgeführt, um mit einem System interagieren zu können. Die unterschiedlichen Ausführungen bzw. Bedienungen werden anhand der nachfolgenden Beispiele erklärt.
 

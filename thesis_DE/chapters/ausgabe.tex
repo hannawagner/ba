@@ -1,27 +1,32 @@
 \chapter{Ausgabemethoden}
 \label{cha:Ausgabe}
 
-Im Kapitel~\ref{cha:Eingabe} wurden alternative Eingabemethoden zur Interaktion Hands-Free näher erläutert. Dieses Kapitel befasst sich mit Ausgabemethoden, die aber nicht zwingend an ihre Eingabemethoden gebunden sind. So gibt es nicht nur bei Systemen, die über die Sprache gesteuert werden, ein akustisches Feedback, sondern auch bei Systemen, die beispielsweise über die Augen oder den Mund gesteuert werden. 
+Im Kapitel~\ref{cha:Eingabe} wurden alternative Eingabemethoden zur Interaktion Hands-Free näher erläutert. Dieses Kapitel befasst sich mit Ausgabemethoden, die aber nicht zwingend an bestimmte Eingabemethoden gebunden sind. So gibt es nicht nur bei Systemen, die über die Sprache gesteuert werden, ein akustisches Feedback, sondern auch bei Systemen, die beispielsweise über die Augen oder den Mund gesteuert werden. 
 
-\section{Auditiver Output}
 
-Eine mögliche Form, wie ein Computer Feedback geben kann, funktioniert über die Sprache. Während bei der Spracheingabe die gesprochene Sprache von einem System in einen Befehl umgewandelt wird, gibt bei der Sprachausgabe der Computer die Informationen in Form von Sprache aus. Da die Sprachausgabe von Menschen gehört und automatisch bewertet wird, ist es wichtig, dass die Sprache von hoher Qualität ist, also möglichst real erscheint. 
+%%%%%%%%%%%%%%%%%%%%%%% Auditiv %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Auditive Ausgabe}
 
-	%abbildung 1
-	\begin{figure}
-	\centering
-	\includegraphics[width=.7\textwidth]{sprachausgabe_overview}
-	\caption{Unterteilung der Sprachausgabe \cite{FellbaumSprache}.}
-	\label{fig:SprachausgabeOverview}
-	\end{figure}
-	
-\newpage
+Eine mögliche Form, wie ein Computer Feedback geben kann, geschieht durch eine auditive Ausgabe. Dies kann entweder durch ein Geräusch, ein Signal oder durch die Sprachausgabe funktionieren.
+\newline \newline
+Eine Möglichkeit auditives Feedback zu erhalten sind vom Computer erzeugte Signale oder bestimmte Geräusche. Bei diesen Signalen bzw. Geräuschen handelt es sich beispielsweise um einen hohen angenehmen Ton bei korrektem Verhalten oder um einen dumpfen unangenehmen Ton bei einer Fehlereingabe. Hierbei handelt es sich aber nicht ausschließlich um Töne, sondern auch Klick-Geräusche können als Ausgabe fungieren. So gibt ein Lautsprecher bei einer Fußgängerampel beispielsweise ein kontinuierliches Klick-Geräusch von sich, wenn es rot ist. Schaltet die Ampel auf grün verdoppeltet sich die Geschwindigkeit des Geräusches.
+\newline \newline
+Weitaus komplexer ist allerdings die Sprachausgabe. Während bei der Spracheingabe die gesprochene Sprache von einem System in einen Befehl umgewandelt wird, gibt bei der Sprachausgabe der Computer die Informationen in Form von Sprache aus. Da die Sprachausgabe von Menschen gehört und automatisch bewertet wird, ist es wichtig, dass die Sprache von hoher Qualität ist, also möglichst real erscheint. 
+\newline
+%abbildung 1
+\begin{figure}
+\centering
+\includegraphics[width=.7\textwidth]{sprachausgabe_overview}
+\caption{Unterteilung der Sprachausgabe \cite{FellbaumSprache}.}
+\label{fig:SprachausgabeOverview}
+\end{figure}
+%	
 Wie in Abb.~\ref{fig:SprachausgabeOverview} dargestellt gibt es zwei unterschiedliche Ansätze, wie der Computer den Text in Sprache umwandeln kann:
 \begin{itemize}
       \item Sprachwiedergabe
       \item Sprachsynthese
 \end{itemize}
-\newline \newline
+\newpage
 %SPRACHWIEDERGABE
 Bei der Sprachwiedergabe werden Sprachsignale ausgegeben, die zuvor aufgenommen und abgespeichert worden sind. Der Umfang an möglichen akustischen Meldungen also an Wörtern ist aus diesem Grund an die Anzahl der Aufnahmen gebunden und daher begrenzt. Da die Signale bzw. Wörter von einer realen Person eingesprochen wurden, weißt diese Methode eine sehr hohen Sprachqualität auf \cite{KaufmannPfisterSprache}.
 
@@ -35,24 +40,52 @@ Bei der Sprachsynthese werden Silben aus verschiedenen Wörtern einzeln abgespei
 %zitat Fellbaum
 Laut Fellbaum \cite{FellbaumSprache} besteht die größte Herausforderung der Sprachsynthese darin, die Stimme noch natürlicher und nicht roboterähnlich wirken zu lassen. Daher sind Mischformen zwischen Sprachwiedergabe und Sprachsynthese in der Praxis üblich. 
 
-\section{Haptischer Ausgabe}
+
+%%%%%%%%%%%%%%%%%%%%%%% Haptisch %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Haptische Ausgabe}
 %TODO what to write here
 %definition haptik
-Es gibt verschiedene Arten von haptischem Feedback:
+Haptische Ausgabe beinhaltet jene Arten von Feedback bei der etwas durch den menschlichen Tastsinn wahrgenommen werden kann. Hierbei gibt es verschiedene Arten:
+%
+%
 \begin{itemize}
       \item Thermales Feedback (Wärme)
       \item Vibration
 			\item Feedback durch ein haptisches Steuerungselement
 \end{itemize}
-
-\section{Visueller Ausgabe}
+\vspace{\baselineskip}
+%
+%
+Bei thermaler Ausgabe handelt es sich um Feedback in Form von Wärme. Der Computer bzw. das Gerät mit dem interagiert wird erhitzt sich auf eine vordefinierte Temperatur und kühlt sich wieder ab. Lee & Lim \cite{LeeLim} haben festgestellt dass warme Temperaturen mit etwas positiven und kalte Temperaturen mit etwas Negativem verbunden werden. Des Weiteren konnte die Teilnehmer eine Abstufung der Wärmeunterschiede feststellen, die über eine strikte Trennung von warm oder kalt überschreiten. Die Veränderungen von warm auf kalt oder umgekehrt sollen nicht zu plötzlich geschehen, da dies ein Unwohlbefinden bei der Interaktion auslöst \cite{LeeLim}. \newline
+Laut Jones & Berri \cite{JonesBerris} soll sich das Ausgabegeräte um max. 20°C/sek abkühlen und um max. 10°C/sek aufwärmen. Auch sollte ein maximaler Unterschied von 20°C nicht überschritten werden.
+\newline \newline
+Haptische Ausgabe kann auch in Form von Vibration erfolgen. Die Vibration kann sich in ihrer Intensität und Dauer unterscheiden. Diese Art von Feedback kann unter anderem zur Bestätigung einer Eingabe erfolgen \cite{Vibration}. Will ein Benutzer beispielsweise auf einer virtuellen Tastatur einen Buchstaben auswählen, kann bei Erfolg eine leichte Vibration durch ein Armband o.ä. erfolgen.
+\newline \newline
+%% TODO Haptisches Stuerelement%%
+Neben der thermalen Ausgabe und der Ausgabe durch Vibration kann das Feedback auch über das Eingabeelement erfolgen. Handelt es sich bei dem Eingabegerät um einen Joystick kann die Ausgabe durch verschiedene Vibrationsmuster, aber auch durch eine Gegenbewegung seitens des Joysticks in X-, Y- oder Z-Richtung erfolgen, je nachdem wie viele Freiheitsgrade das Eingabegerät erlaubt (vgl. Abschnitt ~\ref{cha:Kinnsteuerung}) \cite{an2002haptic}. 
+\newline \newline
+Es gibt unterschiedliche Möglichkeiten, wie haptische Ausgabe geschehen kann. Zur Bestätigung einer Eingabe ist ein Feedback zu Vibration meist üblich. Soll ein möglichst realistisches Feedback bzw. eine Interaktion mit dem System gewährleistet werden ist darüber hinaus Feedback vom Eingabeelement durch Bewegungsrichtung empfehlenswert.  
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%% Visuell %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Visuelle Ausgabe}
 %TODO what to write here
-Arten von visuellem Ausgabe:
-\begin{itemize}
-      \item in Form von Text oder Mediaelementen am Bildschirm
-      \item Grafiken/Symbole (Häckchen oder Kreuze)
-\end{itemize}
-
-
+Um Informationen visuell darzustellen und diese als Ausgabe des Systems zu nutzten, sind ein oder mehrere Displays oder Projektoren notwendig. Die Ausgabe kann entweder auf dem selben Bildschirm wie die Eingabe zu sehen sein, oder auf einem separaten Bildschirm.
+\newline \newline
+Es gibt sehr viele unterschiedliche Arten, in welcher Form und Ausprägung visuelle Ausgabe erfolgen kann. Dies beginnt bei der simplen Ausgabe eines Feldbacktextes. Wird eine bestimmte Interaktion richtig oder falsch ausgeführt, kann daraufhin ein Text bzw. ein Wort erscheinen, dass den Erfolg bzw. Misserfolg mitteilt. Des Weiteren können auch Bilder oder andere Mediaelemente in einem ähnlichen Kontext aufscheinen. Bei der bloßen Unterscheidung zwischen korrekt und inkorrekt können beispielsweise auch ein grünes Häkchen bzw. ein rotes Kreuz angezeigt werden. Visuelle Ausgabe kann aber nicht nur über unterschiedliche Symbole erfolgen, sondern auch die bloße Änderung der Farbe eines Elementes kann ausschlaggebend für dessen Zustand sein.
+\newline \newline
+Abb.~\ref{fig:MyoTraining}(a) beschreibt einen Kalibrierungsschritt vor der Verwendung eines Systems, dass durch die Muskelkontraktionen gesteuert werden kann. Hier gibt der Computer laufend visuelles Feedback über den aktuellen Zustand bzw. die Anspannung der Muskeln.
+\newline \newline
+Bei dem in Abschnitt ~ref{Augensteuerung} erwähnten Augensteuerungssystem des Unternehmens %
+\footnote{http://humanelektronik.de/}
+%
+kann eine virtuelle Tastatur mit Hilfe der Augen bedient werden. Wir ein Buchstabe über einen längeren Zeitraum fokussiert, wird dieser auch ausgewählt. Während der Fixation erscheint eine Sanduhr, die dem Benutzer mitteilt wie lange der gewünschte Buchstabe noch fixiert werden muss \cite{SEETECH}. 
+%
+\newline \newline
+Zusammengefasst kann gesagt werden, dass es sehr viele verschiedene Möglichkeiten gibt, wie ein Computer bzw. das Interaktionsgerät selbst visuell Feedback geben kann. Je nach Anwendungsfall (bloße richtig oder falsch Unterscheidung oder komplexere Ausgabe) können Texte, Symbole, Farben oder auch Kombinationen ausgewählt werden.
+%
+%
+%
+\newline \newline \newline
+Alle beschriebenen Ausgabemethoden können einem menschlichen Sinn zugeordnet werden (auditive Ausgabe dem Hörsinn, haptische Ausgabe dem Tastsinn und visuelle Ausgabe dem Sehsinn). Aus diesem Grund ist es hier erwähnenswert, dass es Ausgabegeräte gibt die dem Geschmackssinn und dem Geruchssinn zugeordnet werden können. Allerdings kommen diese in der Praxis nur vereinzelt zum Einsatz und sind daher in diesem Zuge dieser Arbeit nur nennenswert relevant. 
 
 

@@ -1,58 +1,57 @@
 \chapter{Eingabemethoden}
 \label{cha:Eingabe}
 
-Die meisten Interaktionen mit elektronischen Geräten jeder Art finden durch den Einsatz unserer Hände statt. Das reicht von der einfachen Bedienung von Geräten (z.B. Einschalten eines Computers) bis hin zur Steuerung von Abläufen mittels Gestik (z.B. Liederwechsel durch eine Wischgestik mit der Hand, die dann von einer Software erkannt und in einen Befehl umgewandelt werden kann). Doch nicht immer gibt es die Möglichkeit mit Hilfe der Hände zu interagieren. Beispielsweise beim Autofahren sollen beide Hände am Lenkrad bleiben, bei anstrengenden und präzisen Arbeiten an Maschinen müssen oft beide Hände benutzt werden oder aber auch für Menschen mit Tetraplegie bzw. Tetraparese, die ihre Hände und Arme nicht oder oft nur sehr eingeschränkt benutzen können, sind alternative Interaktionsmöglichkeiten äußerst interessant. Aus diesem Grund beschäftigt sich dieses Kapitel mit den einzelnen alternativen Eingabemethoden, die es ermöglichen auch ohne den Einsatz von den Händen mit einem System interagieren zu können. Welche Vor- und Nachteile, gesonderte Rahmenbedingungen und welche Einsatzgebiete es im Detail zu den einzelnen Methoden gibt, werden in Kapitel~\ref{cha:Vergleich} näher erläutert. 
+Die meisten Interaktionen mit elektronischen Geräten jeder Art finden durch den Einsatz unserer Hände statt. Das reicht von der einfachen Bedienung von Geräten (z.B. Einschalten eines Computers) bis hin zur Steuerung von Abläufen mittels Gestik (z.B. Liederwechsel durch eine Wischgestik, die von einer Software erkannt und in einen Befehl umgewandelt wird). Doch nicht immer gibt es die Möglichkeit mit Hilfe der Hände zu interagieren. Beispielsweise sollen beim Autofahren beide Hände am Lenkrad bleiben, bei anstrengenden und präzisen Arbeiten an Maschinen müssen oft beide Hände benutzt werden oder aber auch für Menschen mit Tetraplegie bzw. Tetraparese, die ihre Hände und Arme nicht oder oft nur sehr eingeschränkt benutzen können, sind alternative Interaktionsmöglichkeiten äußerst nützlich. Aus diesem Grund beschäftigt sich dieses Kapitel mit einzelnen alternativen Eingabemethoden, die es auch ohne den Einsatz von den Händen ermöglichen mit einem System interagieren zu können. Welche Vor- und Nachteile, gesonderte Rahmenbedingungen und welche Einsatzgebiete es im Detail zu den einzelnen Methoden gibt, werden in Kapitel~\ref{cha:Vergleich} näher erläutert. 
 
 %%%%%%%%%%%%%%%%%%%%%%% SPRACHSTEUERUNG %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Sprachsteuerung}
 
-Eine Alternative zur Interaktion mit den Händen stellt die Steuerung mit Hilfe der menschlichen Stimme dar. Ein Spracherkennungssystem soll im optimalen Fall das Gesprochene genau so gut erkennen und verstehen können wie ein Mensch. Da jeder anders spricht bzw. es auch syntaktische Unterschiede gibt, kann ein System sich an das menschliche Verstehen allerdings nur annähern. Oft werden daher in der Praxis die Systeme speziell für einzelne Szenarien entwickelt bzw. angepasst. 
+Eine Alternative zur Interaktion mit den Händen stellt die Steuerung mit Hilfe der menschlichen Stimme dar. Ein Spracherkennungssystem soll im optimalen Fall das Gesprochene genau so gut erkennen und verstehen können wie ein Mensch. Da jeder andere Sprachangewohnheiten hat, einen unterschiedlichen Dialekt spricht und es auch syntaktische Unterschiede gibt, kann sich ein System an das menschliche Verstehen allerdings nur annähern, da diese unterschiedlichen Charakteristiken für die Interpretation erschwerend sind. Oft werden daher in der Praxis die Systeme speziell für einzelne Szenarien entwickelt bzw. angepasst. 
 \newlinew \newline
-Wird der Inhalt des Gesprochen analysiert und zur Interaktion verwendet, wird von der Spracherkennung gesprochen. Hier gibt es zwei Ansätze, damit das System das Gesprochene versteht:
+Wird der Inhalt des Gesprochen analysiert und zur Interaktion verwendet, spricht man von der Spracherkennung. Hier gibt es zwei Ansätze, damit das System das Gesprochene versteht:
 \begin{itemize}
       \item Mustervergleich
       \item Statistische Spracherkennung
 \end{itemize}
 \vspace{\baselineskip}
-Bei einem Mustervergleich werden die einzelnen Wörter verwendet, um diese mit bereits abgespeicherten Mustern und Begriffen zu vergleichen. Jenes Wort, dass dem Eingabewort am ähnlichsten ist, wird verwendet.
+Bei einem Mustervergleich werden die verschieden gesprochenen Wörter verwendet und diese mit bereits abgespeicherten Mustern und Begriffen zu vergleichen. Jenes Wort, das dem Eingabewort am ähnlichsten ist, wird verwendet.
 Hingegen bei der statistischen Spracherkennung werden Beschreibungen von Lauten und Wörtern verwendet. Darüber hinaus werden Statistiken verwendet, die Wahrscheinlichkeiten von Wortfolgen beinhalten \cite{KaufmannPfisterSprache}. 
 \newline
 \newline
 %technischer aspekt
-Bevor das Signal im gesamten Prozess bei dem Analyseschritt angelangt, laufen vorher noch einige Schritte ab. Wenn eine Person etwas spricht werden die analogen Wellen durch elektroakustische Wandler (zum Beispiel ein Mikrophon) in ein elektrisches Signal (Sprachsignal) umgewandelt, damit der Computer diese interpretieren und weiterverarbeiten kann. Auf den gespeicherten Daten werden anschließend verschiedenste Filter angewendet, um störende Signale wie zum Beispiel Hintergrundgeräusche oder Pausen während des Sprechens zu entfernen.Erst dann kann im nächsten Schritt durch eine der bereits beschriebenen Methoden das System das Gesprochene analysieren und so den Sinn erfassen. Ist der Inhalt des Gesprochenen bekannt, kann dieser in einen Text und somit einen Befehl umgewandelt und dadurch der Computer bzw. das Programm gesteuert werden \cite{KaufmannPfisterSprache}.
+Bevor das Signal im gesamten Prozess bei dem Analyseschritt angelangt, laufen vorher noch einige Schritte ab. Wenn eine Person etwas spricht werden die analogen Wellen durch elektroakustische Wandler (zum Beispiel ein Mikrophon) in ein elektrisches Signal (Sprachsignal) umgewandelt, damit der Computer diese interpretieren und weiterverarbeiten kann. Anschließend werden auf den gespeicherten Daten verschiedenste Filter angewendet, um störende Signale, wie zum Beispiel Hintergrundgeräusche oder Pausen während des Sprechens zu entfernen. Erst dann kann im nächsten Schritt das System das Gesprochene mit Hilfe eines Mustervergleichs oder einer statistischen Spracherkennung analysieren und so den Sinn erfassen. Ist der Inhalt des Gesprochenen bekannt, kann dieser in einen Text und somit in einen Befehl umgewandelt und dadurch der Computer bzw. das Programm gesteuert werden \cite{KaufmannPfisterSprache}.
 \newline \newline
-Es gibt viele Faktoren, die einen Einfluss auf das Sprachsignal haben. So hat jeder Mensch neben seiner einzigartigen Stimme einen unterschiedlichen Dialekt, Sprachgewohnheiten, Emotionen in der Sprach, Pausenangewohnheiten und eine verschiedene Sprechgeschwindigkeit \cite{KaufmannPfisterSprache}. Diese Komponente sind nicht nur wichtig für die Erkennung was gesprochen wird, sondern viel mehr wer spricht (Sprecherekennung).
+Es gibt viele Faktoren, die einen Einfluss auf das Sprachsignal haben. So hat jeder Mensch neben seiner einzigartigen Stimme einen unterschiedlichen Dialekt, Sprachgewohnheiten, Emotionen in der Sprache, Pausenangewohnheiten und eine verschiedene Sprechgeschwindigkeit \cite{KaufmannPfisterSprache}. Diese Komponenten sind nicht nur wichtig für die Erkennung, was gesprochen wird, sondern viel mehr dafür, wer spricht (Sprechererkennung)
 \newline \newline
 %Sprechererkennung
-Neben der Spracherkennung gibt es noch die Sprechererkennung, die für die Interaktion mit einem System relevant sein kann. Um erkennen zu können welche Person gerade spricht, muss es Referenzdaten im System geben, die mit dem aktuellen Signal verglichen werden können. Dies geschieht entweder wenn die Person ein bestimmtes Singalwort spricht, dass mit dem abgespeicherten Wort verglichen wird, oder wenn das Sprachsignal lange genug ist, kann auf Grund von statistischen Merkmalen eine Übereinstimmung gefunden werden \cite{KaufmannPfisterSprache}. 
+Um festzustellen zu können welche Person gerade spricht, muss es Referenzdaten im System geben, die mit dem aktuellen Signal verglichen werden können. Dies geschieht entweder, wenn die Person ein bestimmtes Signalwort spricht, das mit dem abgespeicherten Wort verglichen wird, oder wenn das Sprachsignal lange genug ist, kann auf Grund von statistischen Merkmalen eine Übereinstimmung gefunden werden \cite{KaufmannPfisterSprache}. 
 \newline \newline
 %Interaktion!
-Kommunikation durch Sprache ist eines der leichtesten, wenn nicht sogar intuitivsten Mittel zur Verständigung. Daher sollte auch die Interaktion mit einem Computer diesen hohen Standards entsprechen. Allerdings ist im Gegensatz zur gewohnten Face-to-Face-Kommunikation das Gegenüber im Bezug auf Spracherkennung kein intelligenter Gesprächspartner. Ein Computer kann nur schwer lange und komplizierte Sätze und Gedankengänge mitverfolgen und daraus schlecht die Kernaussage zu ziehen. Daher muss dem System verständlich gemacht werden, wann es zuhören soll \cite{SpeechInteraction}.
+Kommunikation durch Sprache ist eines der leichtesten, wenn nicht sogar intuitivsten Mittel zur Verständigung. Daher sollte auch die Interaktion mit einem Computer diesem hohen Standard entsprechen. Allerdings ist im Gegensatz zur gewohnten Face-to-Face-Kommunikation das Gegenüber im Bezug auf Spracherkennung kein intelligenter Gesprächspartner. Ein Computer kann nur schwer lange und komplizierte Sätze und Gedankengänge mitverfolgen und daraus schlecht eine Kernaussage zu ziehen. Daher muss dem System verständlich gemacht werden, wann es zuhören soll \cite{SpeechInteraction}.
 Zwei gängige Methoden für den Start zur Interaktion sind:
 \begin{itemize}
       \item das Drücken einer Starttaste
       \item das Aussprechen eines Aktivierungswortes
 \end{itemize}
 \vspace{\baselineskip}
-Da das drücken eines Startknopfes die Hilfe der Hände verwendet, steht hier das Aktivierungswort im Vordergrund.
+Weil das Drücken eines Startknopfes die Hilfe der Hände benötigt, steht in diesem Zusammenhang das Aussprechen eines Aktivierungswortes zum Start der Interaktion im Vordergrund.
 Durch das Wort 'Alexa' wird beispielsweise der Amazon Echo %
 \footnote{https://www.amazon.com/Amazon-Echo-Bluetooth-Speaker-with-WiFi-Alexa/dp/B00X4WHP5E}
 %
-aktiviert. Bei Amazon Echo handelt es sich um
-ein Sprachinteraktionssystem, dass beispielsweise Musik abspielen, den Einkauf bestellen oder auch Nachrichten und Wetterbeiträge zur Verfügung stellen kann.
-Im Gegensatz zur Benutzung von Amazon Echo, gibt muss bei der Sprachsteuerung von Apple (Siri)%
+aktiviert. Bei Amazon Echo handelt es sich um ein Sprachinteraktionssystem, das beispielsweise Musik abspielen, den Einkauf bestellen oder auch Nachrichten und Wetterbeiträge zur Verfügung stellen kann.
+Im Gegensatz zur Benutzung von Amazon Echo, muss bei der Sprachsteuerung von Apple (Siri)%
 \footnote{https://www.apple.com/ios/siri/}
 %
- das System erst auf die eigene Stimme eingestellt, also kalibriert werden. Das Aktivierungswort 'Hey Siri' muss drei Mal einzeln und zwei Mal in einem Satz eingesprochen werden, damit diese Funktion beispielsweise am iPhone freigeschaltet wird. Anschließend können ebenfalls Wetter oder Nachrichtendaten abgefragt werden, aber auch Anrufe oder Nachrichten können mit Hilfe der Stimme gesteuert werden. 
+ das System erst auf die eigene Stimme eingestellt, also kalibriert werden. Das Aktivierungswort 'Hey Siri' muss drei Mal einzeln und zwei Mal in einem Satz eingesprochen werden, damit diese Funktion beispielsweise am iPhone freigeschaltet wird. Anschließend können ebenfalls Wetter oder Nachrichtendaten abgefragt werden, aber auch Anrufe oder Nachrichten können mit Hilfe der Stimme getätigt werden. 
 \newline \newline
 Sobald das System bereit ist den Input aufzunehmen lässt sich zusammenfassend folgendes festhalten, damit eine erfolgreiche Interaktion mit dem System geschehen kann:
 \begin{itemize}
-      \item keine zu große Distanz zum Mikrophon beachten,
-      \item laut und deutlich zu sprechen und
-			\item nicht zu schnell zu sprechen.
+      \item keine zu große Distanz zum Mikrophon
+      \item laut und deutlich zu sprechen
+			\item nicht zu schnell zu sprechen
 \end{itemize}
 \vspace{\baselineskip}
-Zusammenfassend lässt sich sagen, dass die Sprachinteraktion mit dem Computer auf Benutzersicht noch einige Verbesserung aufweist, damit die Bedienung natürlicher und intuitiver wird und der einer Face-to-Face-Kommunikation näher kommt.
+Zusammenfassend lässt sich sagen, dass die Sprachinteraktion mit dem Computer aus Benutzersicht noch einige Verbesserung braucht, damit die Bedienung natürlicher und intuitiver wird und der einer Face-to-Face-Kommunikation näher kommt.
 
 %%%%%%%%%%%%%%%%%%%%%%% AUGENSTEUERUNG %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Augensteuerung}

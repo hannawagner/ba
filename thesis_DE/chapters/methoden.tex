@@ -289,12 +289,14 @@ Wie die einzelnen Systeme die verschiedenen Gestiken in eine Bewegung umwandeln,
 
 Bei der Muskelsteuerung wird das Zusammenziehen eines Muskels oder bestimmter Muskelpartien verwendet, um so mit einem Computer interagieren zu können.
 \newline \newline
-Der Großteil der Muskelsteuerungssysteme verwendet zur Messung der Signale das Prinzip der Elektromyografie (EMG). Bei einer EMG-Schnittstelle handelt es sich um die Messung der Muskelkontraktion und verknüpft diese mit der gewünschten Interaktion. Die Voraussetzung an den Benutzer besteht lediglich, dass die ausgewählten Muskelpartien selbstständig angespannt bzw. aktiviert werden können. Im Zusammenhang mit der Muskelsteuerung kommt die Oberflächenelektromyografie (sEMG, englisch für Surface Electromyography) zum Einsatz. Hierbei werden die Elektroden, die für die Messung der Signale ausschlaggebend sind, an der Hauptoberfläche angebracht. Mit Hilfe der Elektroden können die myoelektrischen Signale, die die Muskeln produzieren gemessen und in einem Späteren Schritt als bestimmte Interaktion interpretiert werden \cite{EmgDefinition}.
+Der Großteil der Muskelsteuerungssysteme nützt zur Messung der Signale das Prinzip der Elektromyografie (EMG). Bei einer EMG-Schnittstelle handelt es sich um die Messung der Muskelkontraktion und verknüpft diese mit der gewünschten Interaktion. Die Voraussetzung an den Benutzer besteht lediglich, dass die ausgewählten Muskelpartien selbstständig angespannt bzw. aktiviert werden können. Im Zusammenhang mit der Muskelsteuerung kommt die Oberflächenelektromyografie (sEMG, englisch für Surface Electromyography) zum Einsatz. Hierbei werden die Elektroden, die für die Messung der Signale ausschlaggebend sind, an der Hautoberfläche angebracht. Mit Hilfe der Elektroden können die myoelektrischen Signale, die die Muskeln produzieren, gemessen und in einem späteren Schritt als bestimmte Interaktion interpretiert werden \cite{EmgDefinition}.
 \newline \newline
-Abb.~\ref{fig:MyoAblaufOhr} zeigt die einzelnen Schritte die das Signal im System durchläuft um am Ende die Interaktion mit einem Computer zu ermöglichen. In der Studie von Barszap, Skavhaug und Joshi \cite{MyoOhr} werden zwei Frequenzbänder verwendet, um eine X- und Y- Richtung des Mauszeigers zu ermöglichen. Zieht sich der Muskel zusammen, so werden alle messbaren Signale aufgefasst und die relevanten herausgefiltert. Die Signale werden anschließend in zwei Partien aufgeteilt und durch zwei separate Bandpassfilter geschickt. \newline
-Dadurch werden die gewünschten Signale bzw. Frequenzen erneut gefiltert und angepasst. Anschließend werden die beiden Signale in einen Wert zwischen 0 und 100 umgerechnet, der die Ausprägungsstärke in Prozent der jeweiligen Koordinate repräsentiert \cite{MyoOhr}.
+Abb.~\ref{fig:MyoAblaufOhr} zeigt die einzelnen Schritte, die das Signal im System durchläuft, um am Ende die Interaktion mit einem Computer zu ermöglichen. In der Studie von Barszap, Skavhaug und Joshi \cite{MyoOhr} werden zwei Frequenzbänder verwendet, um eine X- und Y- Richtung des Mauszeigers zu ermöglichen. Zieht sich der Muskel zusammen, so werden alle messbaren Signale erfasst und die relevanten herausgefiltert. Anschließend werden die Signale in zwei Partien aufgeteilt und durch zwei separate Bandpassfilter geschickt. \newline
+Dadurch werden die gewünschten Signale bzw. Frequenzen erneut gefiltert und angepasst. Danach werden die beiden Signale in einen Wert zwischen 0 und 100 umgerechnet, der die Ausprägungsstärke in Prozent der jeweiligen Koordinate repräsentiert \cite{MyoOhr}.
 \newline \newline
-Damit ein Benutzer durch den Einsatz von myoelektrischen Signalen mit einem Computer interagieren kann, müssen zu Beginn die richtigen Positionen für die Anbringungen der Elektroden gefunden werden.  \newline \newline Es gibt verschiedene Ansätze wie die Kalibrierung im Detail aussehen kann (folgendes Beispiel bezieht sich auf eine Studie von Vernon und Joshi \cite{MyoTraining}).
+Damit ein Benutzer durch den Einsatz von myoelektrischen Signalen mit einem Computer interagieren kann, müssen zu Beginn die richtigen Positionen für die Anbringungen der Elektroden gefunden werden.  
+\newline \newline 
+Es gibt verschiedene Ansätze, wie die Kalibrierung im Detail aussehen kann. Folgendes Beispiel bezieht sich auf eine Studie von Vernon und Joshi \cite{MyoTraining}.
 %
 %
 \begin{figure}
@@ -322,8 +324,14 @@ Damit ein Benutzer durch den Einsatz von myoelektrischen Signalen mit einem Comp
 %
 %
 \newline
-Dazu werden die Elektroden an der vermuteten Stelle der zu messenden Muskeln angebracht und mit dem Computer verbunden. Auf dem Bildschirm ist das aktuelle sEMG-Signal zu sehen. Ist das Signal mit vielen Störfaktoren, dem sog. Rauschen verbunden, müssen die Elektroden gereinigt oder in der Regel neu positioniert werden. Ist die optimale Position gefunden worden, muss das System auf die individuellen Muskelkontraktionen des Anwenders angepasst werden. Bei diesem Schritt muss der Benutzer die ausgewählten Muskeln über einen Zeitraum von ein paar Sekunden so fest wie möglich anspannen, um die maximale Frequenz bzw. Leistung zu erfassen. Als nächstes werden zwei verschiedene Testphasen durchgeführt. Der erste Test (Abb.~\ref{fig:MyoTraining}(a)) dient dazu ein Bewusstsein zu entwickeln, wann und wie stark der gewünschte Muskel angespannt wird. Der grüne Punkt auf dem Display bewegt sich je nach Anspannung durch die verschiedenen Stufen und soll auch durch Entspannen wieder zur Ausgangslage gebracht werden. Bei dem zweiten Test, der in Abb.~\ref{fig:MyoTraining}(b) dargestellt ist, handelt es sich um eine zweidimensionale Überprüfung. Hier soll der Kursor in X- und Y-Richtung bewegt werden. Dies geschieht ebenfalls durch An- und Entspannung der einzelnen Muskeln. Beide Versuche bauen auf dem Trial und Error Prinzip auf. Der Benutzer muss also durch mehrere Versuche zur richtigen bzw. besten Lösung kommen. Ist der Anwender mit dem 2D-Training vertraut, kann mit der gewünschten Interaktion mit dem Computer begonnen werden. Diese ist auf dem selben Prinzip aufgebaut, allerdings gibt es unterschiedliche Oberflächen, Anordnungen der Elemente und Unterscheidungen in der Aufgabenstellung selbst \cite{MyoTraining}.
+Die Elektroden werden an der vermuteten Stelle der zu messenden Muskeln angebracht und mit dem Computer verbunden. Auf dem Bildschirm ist das aktuelle sEMG-Signal zu sehen. Beinhaltet das Signal viele Störfaktoren, das sog. Rauschen, müssen die Elektroden gereinigt oder neu positioniert werden. Ist die optimale Position gefunden worden, muss das System an die individuellen Muskelkontraktionen des Anwenders angepasst werden. Bei diesem Schritt muss der Benutzer die ausgewählten Muskeln über einen Zeitraum von ein paar Sekunden so fest wie möglich anspannen, um die maximale Frequenz bzw. Leistung zu erfassen. Als nächstes werden beim Benutzer zwei verschiedene Testphasen durchgeführt. Der erste Test (Abb.~\ref{fig:MyoTraining}(a)) dient dazu, ein Bewusstsein zu entwickeln, wann und wie stark der gewünschte Muskel angespannt werden sollen. Der grüne Punkt auf dem Display bewegt sich je nach Anspannung durch die verschiedenen Stufen und soll auch durch Entspannen wieder zur Ausgangslage gebracht werden. Bei dem zweiten Test, der in Abb.~\ref{fig:MyoTraining}(b) dargestellt ist, handelt es sich um eine zweidimensionale Überprüfung. Hier soll der Kursor in X- und Y-Richtung bewegt werden. Dies geschieht ebenfalls durch An- und Entspannung der einzelnen Muskeln. Beide Versuche bauen auf dem Trial und Error Prinzip auf. Der Benutzer muss also durch mehrere Versuche zur richtigen bzw. besten Lösung kommen. Ist der Anwender mit beiden Trainings vertraut, kann mit der gewünschten Interaktion mit dem Computer begonnen werden. Diese ist auf dem selben Prinzip aufgebaut, allerdings gibt es unterschiedliche Oberflächen, Anordnungen der Elemente und Unterscheidungen in der Aufgabenstellung selbst \cite{MyoTraining}.
 \newline \newline
+Abb.~\ref{fig:MyoBand} zeigt das Armband des Unternehmens Myo%
+\footnote{https://www.myo.com/}
+%
+. Dieses verwendet die myoelektrischen Signale des Armes, um durch verschiedene Gesten mit dem Computer interagieren zu können. Zu den fünf vordefinierten Gesten zählen z.B. das Machen einer Faust oder Wischgesten. Es können aber auch eigene Gesten definiert bzw. programmiert werden. Zum einen können die vordefinierten Gesten durch die Einberechnung von Armbewegungen erweitert werden, zum anderen gibt es die Möglichkeit neue Gesten zu erstellen, da der Zugriff auf die rohen EMG-Daten möglich ist \cite{myoBand2}.%
+\newline \newline \newline \newline \newline \newline
+Damit ein Computer mit Hilfe von Muskelkontraktionen gesteuert werden kann, ist ein aufwendiger und gut überlegter Algorithmus notwendig, um die erfassten Signale in das gewünschte Ergebnis zu transferieren. Vor der Interaktion müssen einige Schritte durchlaufen werden, um das System an das Individuum anzupassen und um ein Bewusstsein für die Muskelsteuerung zu erlangen.
 %
 %
 \begin{figure}
@@ -334,39 +342,32 @@ Dazu werden die Elektroden an der vermuteten Stelle der zu messenden Muskeln ang
 \end{figure}
 %
 %
-Abb.~\ref{fig:MyoBand} zeigt das Armband des Unternehmens Myo%
-\footnote{https://www.myo.com/}
-%
-. Dieses verwendet die myoelektrischen Signale des Armes um durch verschiedenen Gesten mit dem Computer interagieren zu können. Es gibt fünf vordefinierte Gesten, wie z.B. das Machen einer Faust oder Wischgesten. Es können aber auch eigene Gesten definiert bzw. programmiert werden. Zum einen können die vordefinierten Gesten mit Einberechnung von Armbewegungen erweitert werden, zum anderen gibt es die Möglichkeit neue Gesten zu erstellen, da der Zugriff auf die rohen EMG-Daten möglich ist \cite{myoBand2}.%
-\newline \newline \newline \newline \newline
-Damit ein Computer mit Hilfe von Muskelkontraktionen gesteuert werden kann, ist ein aufwendiger und gut überlegter Algorithmus notwendig, um die erfassten Signale in das gewünschte Ergebnis zu transferieren. Der Benutzer muss vor der Interaktion einige Schritte durchlaufen, um das System an das Individuum anzupassen und um ein Bewusstsein für die Muskelsteuerung zu erlangen.
-
 
 %%%%%%%%%%%%%%%%%%%%%%% Gehirnaktiviät %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Steuerung durch Gehirnaktivität}
 
-Dieses Kapitel beschäftigt sich mit der Schnittstelle zwischen dem Gehirn und dem Computer. In der Literatur wird in diesem Zusammenhang von Brain-Computer Interface (BCI) gesprochen. Ziel ist es eine direkte Verbindung der beiden Komponenten für eine Interaktion herzustellen. Zusammengefasst liest das BCI die Wellen, die vom Gehirn an den verschiedensten Stellen produziert werden ein und übersetzt diese Signale in Befehle, damit mit einem Computer interagiert werden kann \cite{BRAIN}.
+Dieses Kapitel beschäftigt sich mit der Schnittstelle zwischen dem Gehirn und dem Computer. In der Literatur wird in diesem Zusammenhang von Brain-Computer-Interface (BCI) gesprochen. Ziel ist es, eine direkte Verbindung der beiden Komponenten für eine Interaktion herzustellen. Das BCI liest die Wellen, die vom Gehirn an den verschiedensten Stellen produziert werden ein und übersetzt diese Signale in Befehle, damit mit einem Computer interagiert werden kann \cite{BRAIN}.
 \newline \newline
 Es gibt verschiedene Aufnahmetechniken von BCIs:
 \begin{itemize}
       \item Invasiv
-      \item Teilweise Invasiv
+      \item Teilweise invasiv
 			\item Nicht invasiv
 \end{itemize}
 \vspace{\baselineskip}
 Invasive Gehirn-Computer-Schnittstellen werden direkt im menschlichen Gehirn durch eine Operation eingesetzt. Es können hier einzelne oder mehrere Einheiten in verschiedenen Bereichen des Gehirns platziert und anschließend angesprochen werden. Diese Systeme weisen die höchste Qualität auf, bringen aber durch die Operation gewisse Risiken mit sich.
-Bei teilweise invasiven BCI-Systemen werden die Einheiten nicht direkt in den Gehirnzellen sondern im Schädel eingesetzt und können daher die Signale etwas schlechter empfangen. Bei nicht invasiven Systemen handelt es sich um die sicherste und kostengünstigste Variante auf Kosten von schwächerem Gehirnsignalempfang. Die Signale werden über Elektroden empfangen, die am Kopf befestigt werden. Für diese Technik werden meist mit Hilfe eines Elektroenzephalografen (EEG) die neuronalen Wellen des Gehirns gemessen \cite{BRAIN}.
+Bei teilweise invasiven BCI-Systemen werden die Einheiten nicht direkt in den Gehirnzellen sondern im Schädel eingesetzt, allerdings können daher die Signale etwas schlechter empfangen. Bei nicht invasiven Systemen handelt es sich um die sicherste und kostengünstigste Variante auf Kosten von schwächerem Gehirnsignalempfang. Die Signale werden über Elektroden empfangen, die am Kopf befestigt werden. Für diese Technik werden meist mit Hilfe eines Elektroenzephalografen (EEG) die neuronalen Wellen des Gehirns gemessen \cite{BRAIN}.
 \newline \newline
-Die neuronale Aktivität des Gehirns ist ausschlaggebend für die Messung. Daher ist es wichtig die verschiedenen Signale, die ein EEG misst kurz darzustellen \cite{BRAIN}:
+Die neuronale Aktivität des Gehirns ist ausschlaggebend für die Messung. Daher ist es wichtig, die verschiedenen Signale, die ein EEG misst, kurz darzustellen \cite{BRAIN}:
 \begin{itemize}
       \item Delta Signal: Hierbei handelt es sich um die langsamsten Wellen mit einer Frequenz zwischen 0.5 und 3.5 Hz, die während des Schlafens oder im komatösen Zustand auftreten.
-      \item Theta Signal: Es handelt sich hierbei um Wellen, die beispielsweise während des Träumens vorkommen und werden zwischen 3.5 und 7.5 Hz. gemessen.
-			\item Alpha Signal: Dies sind langsamere Wellen, die beim Problemlösen oder Entspannen auftreten und reichen von einer Frequenz zwischen 7.5 und 12 Hz.
-			\item Beta Signal: Diese Wellen sind oft mit Anstrengung wie beispielsweise des Lösens einer mathematischen Aufgabe verbunden (mit einer Frequenz von 12 bis 30 Hz.).
-      \item Gamma Signal: Je größer hier die Amplitude ist, desto mehr Stress, Angst oder Panik erlebt die Personen (alle Frequenzen ab 31 Hz.).
+      \item Theta Signal: Es handelt sich hierbei um Wellen, die beispielsweise während des Träumens vorkommen und liegen in einem Bereich zwischen 3.5 und 7.5 Hz gemessen.
+			\item Alpha Signal: Dies sind langsamere Wellen, die beim Problemlösen oder Entspannen auftreten (Frequenzen zwischen 7.5 und 12 Hz).
+			\item Beta Signal: Diese Wellen sind oft mit Anstrengung, wie beispielsweise des Lösens einer mathematischen Aufgabe, verbunden und liegen in einem Bereich zwischen 12 und 30 Hz.
+      \item Gamma Signal: Je größer hier die Amplitude ist, desto mehr Stress, Angst oder Panik erlebt die Personen (alle Frequenzen ab 31 Hz).
 \end{itemize}
 \vspace{\baselineskip}
-Je nach Anwendungsbereich können verschiedene Signale verwendet werden. Für eine Interaktion mit einer Person, die sich nicht in einem komaähnlichen Zustand befindet sind alle Signale ab einer Stärke von 3.5 Hz. relevant.
+Je nach Anwendungsbereich können verschiedene Signale verwendet werden. Für eine Interaktion mit einer Person, die sich nicht in einem komaähnlichen Zustand befindet, sind alle Signale ab einer Stärke von 3.5 Hz relevant.
 \newline \newline
 %
 %
@@ -378,15 +379,15 @@ Je nach Anwendungsbereich können verschiedene Signale verwendet werden. Für ei
 \end{figure}
 %
 %
-Für den gesamte Ablauf, der nötig ist um eine Gehirn-Computer-Schnittstelle zu erstellen sind, wie in Abb.~\ref{fig:BCI} veranschaulicht, grob drei Schritte notwendig \cite{BRAIN}:
+Für den gesamte Ablauf, der nötig ist, um eine Gehirn-Computer-Schnittstelle zu erstellen sind, wie in Abb.~\ref{fig:BCI} veranschaulicht, sind grob drei Schritte notwendig \cite{BRAIN}:
 \begin{itemize}
       \item Im ersten Schritt werden die elektrischen Signale von der Kopfhaut oder der Oberfläche des Gehirns erfasst (Signalerfassung).
-      \item Da die erfassten Signale in der Regel sehr schwach sind, werden diese als nächstes versärkt und von Störvariablen gereinigt. Danach werden die Signale einen Übersetzungsalgorithmus durchlaufen, damit die Absichten des Benutzers erkannt werden können (Signalverarbeitung).
+      \item Da die diese Signale in der Regel sehr schwach sind, werden sie als nächstes verstärkt und von Störvariablen gereinigt. Danach durchlaufen die Signale einen Übersetzungsalgorithmus, damit die Absichten des Benutzers erkannt werden können (Signalverarbeitung).
 			\item Im letzten Schritt müssen die Daten von einem Programm bzw. einer Software so interpretiert werden, damit diese für eine Computerinteraktion verwendet werden können.
 \end{itemize}
 %
 %
 \vspace{\baselineskip}
-Um als Benutzer einen Computer mit Hilfe von Gehirnaktivität steuern zu können, muss das System vor der Interaktion individuell angepasst werden. Als mögliche Kalibrierungsmethode kann ein Mauskursor gedanklich mitverfolgt werden, während dieser sich bewegt. Der Benutzer soll sich hierbei vorstellen er würde die Bewegung mit der Hand oder dem Arm ausführen. Je nach Person zeigt sich eine Anstrengung in dem motorischen Teil des Gehirns unterschiedlich stark und das System wird dahingehend angepasst. Als nächsten Schritt wird erneut ein Mauskursor gedanklich mitverfolgt. Allerdings erscheint ein zweiter Kursor, der auf Grundlage der bereits erhobenen Daten den momentanen Stand aufzeigt. Diese zwei Schritte werden mehrmals durchgeführt, um ein optimales Ergebnis zu erzielen. Neben der Mausbewegung kann auch ein Mausklick simuliert werden. Die Auswahl eines Menüpunktes kann beispielsweise dann so funktionieren, dass ein Menüpunkt hervorgehoben wird. Will der Anwender diesen auswählen, muss es sich besonders darauf konzentrieren bzw. die Gehirnbereiche müssen eine erhöhte Aktivität vorweisen \cite{BrainInt}.
+Um als Benutzer einen Computer mit Hilfe von Gehirnaktivität steuern zu können, muss das System vor der Interaktion individuell angepasst werden. Als mögliche Kalibrierungsmethode kann ein Mauszeiger gedanklich mitverfolgt werden, während dieser sich bewegt. Der Benutzer soll sich hierbei vorstellen, er würde die Bewegung mit der Hand oder dem Arm ausführen. Je nach Person zeigt sich eine Anstrengung in dem motorischen Teil des Gehirns unterschiedlich stark und das System wird dahingehend angepasst. Im nächsten Schritt wird erneut ein Mauskursor gedanklich mitverfolgt. Allerdings erscheint ein zweiter Kursor, der auf Grundlage der bereits erhobenen Daten den momentanen Stand aufzeigt. Diese zwei Schritte werden mehrmals durchgeführt, um ein optimales Ergebnis zu erzielen. Neben der Mausbewegung kann auch ein Mausklick simuliert werden. Die Auswahl eines Menüpunktes kann beispielsweise dann so funktionieren, dass ein Menüpunkt hervorgehoben wird. Hat der Anwender sich für einen bestimmten entschieden, muss er sich besonders darauf konzentrieren bzw. die Gehirnbereiche müssen eine erhöhte Aktivität vorweisen \cite{BrainInt}.
 \newline \newline
-Die Interaktion mit Hilfe der Messung der Gehirnaktivität ist zusammengefasst im Gegensatz zu den zuvor beschrieben Methoden eine komplexere und aufwendigere Eingabemethode. Auch die Interaktion ist mit viel Aufwand hinsichtlich der Kalibrierung verbunden.
+Die Interaktion mit Hilfe der Messung der Gehirnaktivität ist im Gegensatz zu den zuvor beschrieben Methoden eine komplexere und aufwendigere Eingabemethode. Auch die Interaktion ist mit viel Aufwand hinsichtlich der Kalibrierung verbunden.

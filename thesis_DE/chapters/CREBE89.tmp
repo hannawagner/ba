@@ -166,12 +166,12 @@ Durch eine stärke Kinnbewegung nach links bzw. Rechts oder über zusätzlich an
 \newline
 Dies kann je nach Ausführung der Steuerung verschieden viele Freiheitsgrade beinhalten. Freiheitsgrade bzw. Degrees of Freedom (DoF) bezeichnen die Bewegungsfreiheit eines Körpers. Abb.~\ref{fig:6DoF} zeigt die sechs Freiheitsgrade bzw. sechs verschiedene Bewegungsrichtungen \cite{6DoF}:
 \begin{itemize}
-      \item Rauf und runter (Up and Down)
-      \item Links und rechts (Left and Right)
-			\item Vorwärts und Rückwärts (Forward and Back)
-			\item Kippen entlang der X-Achse (Roll)
-      \item Kippen entlang der Y-Achse (Pitch)
-			\item Kippen entlang der Z-Achse (Yaw)
+      \item Rauf und runter 
+      \item Links und rechts 
+			\item Vorwärts und Rückwärts 
+			\item Kippen entlang der X-Achse 
+      \item Kippen entlang der Y-Achse
+			\item Kippen entlang der Z-Achse
 \end{itemize}
 %
 \vspace{\baselineskip}
@@ -190,7 +190,7 @@ Wie stark der Joystick in die bestimmte Richtung gedrückt werden muss, um eine 
 %%%%%%%%% Mundsteuerung %%%%%%%%%
 \subsection{Mundsteuerung}
 
-Das Prinzip der Mundsteuerung funktioniert ähnlich wie die Kinnsteuerung. Durch die verschiedenen Interaktionsmöglichkeiten, die durch den Einsatz des Mundes möglich sind, wird versucht, eine Interaktion, beispielsweise mit einem Computer, möglich zu machen.
+Das Prinzip der Mundsteuerung funktioniert ähnlich wie die Kinnsteuerung. Durch die verschiedenen Interaktionsmöglichkeiten, die durch den Einsatz des Mundes möglich sind, wird versucht, eine Interaktion, beispielsweise einem Computer, möglich zu machen.
 \newline \newline
 Bei der in Abb.~\ref{fig:mund}(a) gezeigten Mundsteuerung handelt es sich um die IntegraMouse Plus, die das Unternehmen LIFEtool%
 \footnote{http://www.lifetool.at/startseite/}
@@ -221,7 +221,7 @@ Bei beiden Steuerungen ist vor der Benutzung keine Kalibrierung notwendig. Ledig
 %%%%%%%%% Kopfsteuerung %%%%%%%%%
 \subsection{Kopfsteuerung}
 
-Es gibt zwei verschiedene Arten, wie man nur durch den Einsatz des Kopfes mit einem System interagieren kann. Zum einen kann eine Kamera verwendet werden, um die Bewegungen des gesamten Gesichtes oder einen bestimmtes Teiles davon (z.B. den Mund) zu verfolgen und diese dann anschließend von einem System in die gewünschten Befehle umzuwandeln. Andererseits kann auch eine Vorrichtung am Kopf befestigt werden, dann läuft die Interaktion haptisch ab.
+Es gibt zwei verschiedene Arten, wie man nur durch den Einsatz des Kopfes mit einem System interagieren kann. Zum einen kann eine Kamera verwendet werden, um die Bewegungen des gesamten Gesichtes oder einen bestimmtes Teiles davon (z.B. den Mund) zu verfolgen und diese dann anschließend von einem System in die gewünschten Befehle umzuwandeln. Andererseits kann auch eine Vorrichtung am Kopf befestigt werden und die Interaktion läuft haptisch ab.
 \newline \newline
 Bei der haptischen Variante könnte beispielsweise ein Stirnband am Kopf befestigt werden, das mit je einem Sensor links und rechts ausgestattet ist. Wird der Kopf in eine Richtung geneigt, wird einer der beiden Sensoren aktiviert. Das Stirnband müsste dafür über Bluetooth oder WLAN mit einem Computer verbunden sein, damit eine Software die Bewegungen bzw. Sensoren erkennen und auswerten kann. Damit das Stirnband benutzt werden kann, müsste es individuell angepasst werden, da die seitliche Neigung des Kopfes je nach Benutzer unterschiedlich ist.
 \newline \newline
@@ -282,14 +282,14 @@ Bei der in Abb.~\ref{fig:foot}(c) dargestellten Fußsteuerung der Firma Hidrex %
 , handelt es sich um einen Schuhhalter, der als Joystick funktioniert. Die Bedienung ist ähnlich der eines herkömmlichen Joysticks. Der Fuß muss in die gewünschte Richtung gezogen bzw. bewegt werden, um einen Bewegungsablauf nachvollziehen zu können.
 %
 \newline \newline
-Wie die einzelnen Systeme die verschiedenen Gestiken in eine Bewegung umwandeln, ist von System zu System verschieden. Häufig findet ein joystickähnliches Element für die Bewegungsrichtung Verwendung. Zusätzliche Tasten helfen bei der Auswahl von gewünschten Symbolen oder Elementen.
+Wie die einzelnen Systeme die verschiedenen Gestiken in eine Bewegung umwandeln, ist von System zu System verschieden. Aus Anwendersicht wird allerdings meist ein joystickähnliches Element für die Richtung bzw. Bewegungsrichtung bedient. Zusätzliche Tasten helfen bei der Auswahl von gewünschten Symbolen oder Elementen.
 
 %%%%%%%%%%%%%%%%%%%%%%% Muskelsteuerung %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Muskelsteuerung}
 
 Bei der Muskelsteuerung wird das Zusammenziehen eines Muskels oder bestimmter Muskelpartien verwendet, um so mit einem Computer interagieren zu können.
 \newline \newline
-Der Großteil der Muskelsteuerungssysteme nützt zur Messung der Signale das Prinzip der Elektromyografie (EMG). Bei einer EMG-Schnittstelle handelt es sich um die Messung der Muskelkontraktionen und verknüpft diese mit der gewünschten Interaktion. Die Voraussetzung an den Benutzer besteht lediglich darin, die ausgewählten Muskelpartien selbstständig anzuspannen bzw. zu aktivieren. Im Zusammenhang mit der Muskelsteuerung kommt die Oberflächenelektromyografie (sEMG, englisch für Surface Electromyography) zum Einsatz. Hierbei werden die Elektroden, die für die Messung der Signale ausschlaggebend sind, an der Hautoberfläche angebracht. Mit Hilfe der Elektroden können die myoelektrischen Signale, die die Muskeln produzieren, gemessen und in einem späteren Schritt als bestimmte Interaktion interpretiert werden \cite{EmgDefinition}.
+Der Großteil der Muskelsteuerungssysteme nützt zur Messung der Signale das Prinzip der Elektromyografie (EMG). Bei einer EMG-Schnittstelle handelt es sich um die Messung der Muskelkontraktion und verknüpft diese mit der gewünschten Interaktion. Die Voraussetzung an den Benutzer besteht lediglich, dass die ausgewählten Muskelpartien selbstständig angespannt bzw. aktiviert werden können. Im Zusammenhang mit der Muskelsteuerung kommt die Oberflächenelektromyografie (sEMG, englisch für Surface Electromyography) zum Einsatz. Hierbei werden die Elektroden, die für die Messung der Signale ausschlaggebend sind, an der Hautoberfläche angebracht. Mit Hilfe der Elektroden können die myoelektrischen Signale, die die Muskeln produzieren, gemessen und in einem späteren Schritt als bestimmte Interaktion interpretiert werden \cite{EmgDefinition}.
 \newline \newline
 Abb.~\ref{fig:MyoAblaufOhr} zeigt die einzelnen Schritte, die das Signal im System durchläuft, um am Ende die Interaktion mit einem Computer zu ermöglichen. In der Studie von Barszap, Skavhaug und Joshi \cite{MyoOhr} werden zwei Frequenzbänder verwendet, um eine X- und Y- Richtung des Mauszeigers zu ermöglichen. Zieht sich der Muskel zusammen, so werden alle messbaren Signale erfasst und die relevanten herausgefiltert. Anschließend werden die Signale in zwei Partien aufgeteilt und durch zwei separate Bandpassfilter geschickt. \newline
 Dadurch werden die gewünschten Signale bzw. Frequenzen erneut gefiltert und angepasst. Danach werden die beiden Signale in einen Wert zwischen 0 und 100 umgerechnet, der die Ausprägungsstärke in Prozent der jeweiligen Koordinate repräsentiert \cite{MyoOhr}.
@@ -324,7 +324,7 @@ Es gibt verschiedene Ansätze, wie die Kalibrierung im Detail aussehen kann. Fol
 %
 %
 \newline
-Die Elektroden werden an der vermuteten Stelle der zu messenden Muskeln angebracht und mit dem Computer verbunden. Auf dem Bildschirm ist das aktuelle sEMG-Signal zu sehen. Beinhaltet das Signal viele Störfaktoren, das sog. Rauschen, müssen die Elektroden gereinigt oder neu positioniert werden. Ist die optimale Position gefunden worden, muss das System an die individuellen Muskelkontraktionen des Anwenders angepasst werden. Bei diesem Schritt muss der Benutzer die ausgewählten Muskeln über einen Zeitraum von ein paar Sekunden so fest wie möglich anspannen, um die maximale Frequenz bzw. Leistung erfassen zu können. Als nächstes werden beim Benutzer zwei verschiedene Testphasen durchgeführt. Der erste Test (Abb.~\ref{fig:MyoTraining}(a)) dient dazu, ein Bewusstsein zu entwickeln, wann und wie stark der gewünschte Muskel angespannt werden sollen. Der grüne Punkt auf dem Display bewegt sich je nach Anspannung durch die verschiedenen Stufen und soll auch durch Entspannen wieder zur Ausgangslage gebracht werden. Bei dem zweiten Test, der in Abb.~\ref{fig:MyoTraining}(b) dargestellt ist, handelt es sich um eine zweidimensionale Überprüfung. Hier soll der Kursor in X- und Y-Richtung bewegt werden. Dies geschieht ebenfalls durch An- und Entspannung der einzelnen Muskeln. Beide Versuche bauen auf dem Trial und Error Prinzip auf. Der Benutzer muss also durch mehrere Versuche zur richtigen bzw. besten Lösung kommen. Ist der Anwender mit beiden Trainings vertraut, kann mit der gewünschten Interaktion mit dem Computer begonnen werden. Diese ist auf dem selben Prinzip aufgebaut, allerdings gibt es unterschiedliche Oberflächen, Anordnungen der Elemente und Unterscheidungen in der Aufgabenstellung selbst \cite{MyoTraining}.
+Die Elektroden werden an der vermuteten Stelle der zu messenden Muskeln angebracht und mit dem Computer verbunden. Auf dem Bildschirm ist das aktuelle sEMG-Signal zu sehen. Beinhaltet das Signal viele Störfaktoren, das sog. Rauschen, müssen die Elektroden gereinigt oder neu positioniert werden. Ist die optimale Position gefunden worden, muss das System an die individuellen Muskelkontraktionen des Anwenders angepasst werden. Bei diesem Schritt muss der Benutzer die ausgewählten Muskeln über einen Zeitraum von ein paar Sekunden so fest wie möglich anspannen, um die maximale Frequenz bzw. Leistung zu erfassen. Als nächstes werden beim Benutzer zwei verschiedene Testphasen durchgeführt. Der erste Test (Abb.~\ref{fig:MyoTraining}(a)) dient dazu, ein Bewusstsein zu entwickeln, wann und wie stark der gewünschte Muskel angespannt werden sollen. Der grüne Punkt auf dem Display bewegt sich je nach Anspannung durch die verschiedenen Stufen und soll auch durch Entspannen wieder zur Ausgangslage gebracht werden. Bei dem zweiten Test, der in Abb.~\ref{fig:MyoTraining}(b) dargestellt ist, handelt es sich um eine zweidimensionale Überprüfung. Hier soll der Kursor in X- und Y-Richtung bewegt werden. Dies geschieht ebenfalls durch An- und Entspannung der einzelnen Muskeln. Beide Versuche bauen auf dem Trial und Error Prinzip auf. Der Benutzer muss also durch mehrere Versuche zur richtigen bzw. besten Lösung kommen. Ist der Anwender mit beiden Trainings vertraut, kann mit der gewünschten Interaktion mit dem Computer begonnen werden. Diese ist auf dem selben Prinzip aufgebaut, allerdings gibt es unterschiedliche Oberflächen, Anordnungen der Elemente und Unterscheidungen in der Aufgabenstellung selbst \cite{MyoTraining}.
 \newline \newline
 Abb.~\ref{fig:MyoBand} zeigt das Armband des Unternehmens Myo%
 \footnote{https://www.myo.com/}

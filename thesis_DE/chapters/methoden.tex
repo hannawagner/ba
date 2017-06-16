@@ -1,13 +1,10 @@
 \chapter{Eingabemethoden}
 \label{cha:Eingabe}
-
-Es gibt viele Anwendungsfälle, in denen die Interaktionen mit einem System mit den Händen nicht möglich ist. In alltäglichen Situation, wie beispielsweise beim Autofahren, bei anstrengenden und präzisen Arbeiten an Maschinen oder für Menschen mit Beeinträchtigung, sind Alternativen notwendig. Aus diesem Grund beschäftigt sich dieses Kapitel mit verschiedenen alternativen Eingabemethoden, die es auch ohne den Einsatz von den Händen ermöglichen, mit einem System interagieren zu können. Vor- und Nachteile, gesonderte Rahmenbedingungen und Einsatzgebiete werden in Kapitel~\ref{cha:Vergleich} näher erläutert. 
-
+Es gibt viele Anwendungsfälle, in denen die Interaktionen mit einem System mit den Händen nicht möglich ist. In alltäglichen Situation, wie beispielsweise beim Autofahren, bei anstrengenden und präzisen Arbeiten an Maschinen oder für Menschen mit Beeinträchtigung, sind Alternativen notwendig. Aus diesem Grund beschäftigt sich dieses Kapitel mit verschiedenen alternativen Eingabemethoden, die es auch ohne den Einsatz von den Händen ermöglichen, mit einem System interagieren zu können. Vor- und Nachteile, gesonderte Rahmenbedingungen und Einsatzgebiete werden in Kapitel~\ref{cha:Vergleich} näher erläutert.
 %%%%%%%%%%%%%%%%%%%%%%% SPRACHSTEUERUNG %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Sprachsteuerung}
-
 Eine Alternative zur Interaktion mit den Händen stellt die Steuerung mit Hilfe der menschlichen Stimme dar. Ein Spracherkennungssystem soll im optimalen Fall das Gesprochene genau so gut erkennen und verstehen können wie ein Mensch. Da es unterschiedliche Sprachangewohnheiten, einen unterschiedlichen Dialekt und es auch syntaktische Unterschiede gibt, kann ein System an das menschliche Verstehen allerdings nur angenähert werden. Oft werden daher in der Praxis die Systeme speziell für einzelne Szenarien entwickelt bzw. angepasst. 
-\newlinew \newline
+\newline \newline
 Wird der Inhalt des Gesprochen analysiert, wird dies als Spracherkennung bezeichnet. Hier gibt es zwei Ansätze, damit das System das Gesprochene versteht:
 \begin{itemize}
       \item Mustervergleich
@@ -22,7 +19,7 @@ Bevor das Signal im gesamten Prozess bei dem Analyseschritt angelangt, durchläu
 Es gibt viele Faktoren, die einen Einfluss auf das Sprachsignal haben. So hat jeder Mensch neben seiner einzigartigen Stimme einen unterschiedlichen Dialekt, Sprachgewohnheiten, Emotionen in der Sprache, Pausenangewohnheiten und eine verschiedene Sprechgeschwindigkeit \cite{KaufmannPfisterSprache}. Diese Komponenten sind nicht nur wichtig für die Erkennung, was gesprochen wird, sondern viel mehr dafür, wer spricht (Sprechererkennung).
 \newline \newline
 %Sprechererkennung
-Um festzustellen zu können welche Person gerade spricht, muss es Referenzdaten im System geben, die mit dem aktuellen Signal verglichen werden können. Dies geschieht entweder, wenn die Person ein bestimmtes Signalwort spricht, das mit dem abgespeicherten Wort verglichen wird, oder wenn das Sprachsignal lange genug ist, kann auf Grund von statistischen Merkmalen wie z.B. Stimmfarbe oder Sprechgeschwindigkeit eine Übereinstimmung gefunden werden \cite{KaufmannPfisterSprache}. 
+Um festzustellen zu können welche Person gerade spricht, muss es Referenzdaten im System geben, die mit dem aktuellen Signal verglichen werden können. Dies geschieht entweder, wenn die Person ein bestimmtes Signalwort spricht, das mit dem abgespeicherten Wort verglichen wird, oder wenn das Sprachsignal lange genug ist, kann auf Grund von statistischen Merkmalen wie \zB Stimmfarbe oder Sprechgeschwindigkeit eine Übereinstimmung gefunden werden \cite{KaufmannPfisterSprache}. 
 \newline \newline
 %Interaktion!
 Kommunikation durch Sprache ist eines der leichtesten, wenn nicht sogar das intuitivste Mittel zur Verständigung. Daher sollte auch die Interaktion mit einem Computer diesem hohen Standard entsprechen. Allerdings ist im Gegensatz zur gewohnten Face-to-Face-Kommunikation das Gegenüber im Bezug auf Spracherkennung kein intelligenter Gesprächspartner. Ein Computer kann nur schwer lange und komplizierte Sätze und Gedankengänge mitverfolgen und daraus schlecht eine Kernaussage ziehen. Daher muss dem System verständlich gemacht werden, wann es zuhören soll \cite{SpeechInteraction}.
@@ -70,7 +67,7 @@ Wie in Abb.~\ref{fig:eyeTrackingSystems} dargestellt, unterscheidet Duchowski \c
 \newline \newline
 Interaktive Systeme lassen sich wiederum in zwei Bereiche teilen. Selektive Systeme benutzen den Blickpunkt als analoges Eingabeelement, während Blickkontingentsysteme für die Darstellung von komplexen Displays verwendet werden. 
 \newline \newline
-Abgesehen davon, wie die Daten aufgezeichnet werden bzw. was aufgezeichnet wird, gibt es eine Unterscheidung zwischen den verschiedenen Eye-Tracking-Systemen. Diese können in intrusive und nicht-intrusive Systeme unterteilt werden. Intrusive Eye-Tracker haben einen direkten Kontakt mit den Anwendern (z.B. durch Kontaktlinsen). Nicht-intrusive Eye-Tracking-Systeme hingegen messen die Blicke mit Hilfe einer oder mehrerer Kameras. 
+Abgesehen davon, wie die Daten aufgezeichnet werden bzw. was aufgezeichnet wird, gibt es eine Unterscheidung zwischen den verschiedenen Eye-Tracking-Systemen. Diese können in intrusive und nicht-intrusive Systeme unterteilt werden. Intrusive Eye-Tracker haben einen direkten Kontakt mit den Anwendern (\zB durch Kontaktlinsen). Nicht-intrusive Eye-Tracking-Systeme hingegen messen die Blicke mit Hilfe einer oder mehrerer Kameras. 
 \newline \newline
 In der Praxis werden eine Vielzahl verschiedenster Eye-Tracking-Systeme als Basis für die Augensteuerung verwendet. Die Unternehmen Tobii%
 \footnote{http://www.tobii.com/group/}
@@ -215,7 +212,7 @@ Bei beiden Steuerungen ist vor der Benutzung keine Kalibrierung notwendig. Ledig
 %%%%%%%%% Kopfsteuerung %%%%%%%%%
 \subsection{Kopfsteuerung}
 
-Es gibt zwei verschiedene Arten, wie durch den Einsatz des Kopfes mit einem System interagieren werden kann. Zum einen kann eine Kamera verwendet werden, um die Bewegungen des gesamten Gesichtes oder eines bestimmten Teiles davon (z.B. des Mundes) zu verfolgen und diese dann anschließend von einem System in die gewünschten Befehle umzuwandeln. Andererseits kann auch eine Vorrichtung am Kopf befestigt werden und die Interaktion funktioniert durch die Neigungsberechnungen der Sensoren, die Teil der Vorrichtung sind.
+Es gibt zwei verschiedene Arten, wie durch den Einsatz des Kopfes mit einem System interagieren werden kann. Zum einen kann eine Kamera verwendet werden, um die Bewegungen des gesamten Gesichtes oder eines bestimmten Teiles davon (\zB des Mundes) zu verfolgen und diese dann anschließend von einem System in die gewünschten Befehle umzuwandeln. Andererseits kann auch eine Vorrichtung am Kopf befestigt werden und die Interaktion funktioniert durch die Neigungsberechnungen der Sensoren, die Teil der Vorrichtung sind.
 \newline \newline
 Bei der zweiten Variante könnte beispielsweise ein Stirnband am Kopf befestigt werden, das mit je einem Sensor links und rechts ausgestattet ist. Wird der Kopf in eine Richtung geneigt, wird einer der beiden Sensoren aktiviert. Das Stirnband müsste dafür über Bluetooth oder WLAN mit einem Computer verbunden sein, damit eine Software die Bewegungen bzw. Sensoren erkennen und auswerten kann. Damit das Stirnband benutzt werden kann, müsste es individuell angepasst werden, da die seitliche Neigung des Kopfes je nach Benutzer unterschiedlich ist.
 \newline \newline
@@ -322,7 +319,7 @@ Die Elektroden werden an der vermuteten Stelle der zu messenden Muskeln angebrac
 Abb.~\ref{fig:MyoBand} zeigt das Armband des Unternehmens Myo%
 \footnote{https://www.myo.com/}
 %
-. Dieses verwendet die myoelektrischen Signale des Armes, um durch verschiedene Gesten mit dem Computer interagieren zu können. Zu den fünf vordefinierten Gesten zählen z.B. das Bilden einer Faust oder Wischgesten. Es können aber auch eigene Gesten definiert bzw. programmiert werden. Zum einen können die vordefinierten Gesten durch die Einberechnung von Armbewegungen erweitert werden, zum anderen gibt es die Möglichkeit neue Gesten zu erstellen, da der Zugriff auf die rohen EMG-Daten möglich ist \cite{myoBand2}.%
+. Dieses verwendet die myoelektrischen Signale des Armes, um durch verschiedene Gesten mit dem Computer interagieren zu können. Zu den fünf vordefinierten Gesten zählen \zB das Bilden einer Faust oder Wischgesten. Es können aber auch eigene Gesten definiert bzw. programmiert werden. Zum einen können die vordefinierten Gesten durch die Einberechnung von Armbewegungen erweitert werden, zum anderen gibt es die Möglichkeit neue Gesten zu erstellen, da der Zugriff auf die rohen EMG-Daten möglich ist \cite{myoBand2}.%
 \newline \newline \newline 
 Damit ein Computer mit Hilfe von Muskelkontraktionen gesteuert werden kann, ist ein aufwendiger und gut überlegter Algorithmus notwendig, um die erfassten Signale in das gewünschte Ergebnis zu transferieren. Vor der Interaktion müssen wie beschrieben einige Schritte durchlaufen werden, um das System an das Individuum anzupassen und um ein Bewusstsein für die Muskelsteuerung zu erlangen.
 %
@@ -383,6 +380,20 @@ Für den gesamte Ablauf, der nötig ist, um eine Gehirn-Computer-Schnittstelle z
 \vspace{\baselineskip}
 \vspace{\baselineskip}
 \vspace{\baselineskip}
+%bild epoc
+%beschreibung epoce
+\begin{figure}
+\centering
+\includegraphics[width=.5\textwidth]{epoc}
+\caption{Emotiv EPOC+ \cite{epoc}}
+\label{fig:epoc}
+\end{figure}
+\vspace{\baselineskip}
+Abb.~\ref{fig:epoc} zeigt das EPOC+ des Unternehmens Emotiv%
+\footnote{https://www.emotiv.com}
+%
+. Es werden 14 EEG Kanäle genutzt, um bestmögliche Signale zu empfangen. Das Headset wird über WLAN mit einem Computer verbunden und zeigt die Gehirnaktivität in Echtzeit. Durch erhöhte Gehirnaktivität in bestimmten Areal können Charaktere in einem Computerspiel oder ein ferngesteuerter Hubschrauber gesteuert werden. Interaktionen durchgeführt werden. Über den Zugang zu den rohen EEG Daten, kann eine  Software programmiert werden, die eine individuelle Interaktion mit einem System ermöglicht \cite{epoc}. 
+\newline \newline
 Um als Benutzer einen Computer mit Hilfe von Gehirnaktivität steuern zu können, muss das System vor der Interaktion individuell angepasst werden. Als mögliche Kalibrierungsmethode kann ein Mauszeiger gedanklich mitverfolgt werden, während dieser sich bewegt. Der Benutzer soll sich hierbei vorstellen, er würde die Bewegung mit der Hand oder dem Arm ausführen. Je nach Person zeigt sich eine Anstrengung in dem motorischen Teil des Gehirns unterschiedlich stark und das System wird dahingehend angepasst. Im nächsten Schritt wird erneut ein Mauszeiger gedanklich mitverfolgt. Allerdings erscheint ein zweiter Cursor, der auf Grundlage der bereits erhobenen Daten den momentanen Stand aufzeigt. Diese zwei Schritte werden mehrmals durchgeführt, um ein optimales Ergebnis zu erzielen. Neben der Mausbewegung kann auch ein Mausklick simuliert werden. Die Auswahl eines Menüpunktes kann beispielsweise dann so funktionieren, dass ein Menüpunkt hervorgehoben wird. Hat der Anwender sich für einen bestimmten entschieden, muss er sich besonders darauf konzentrieren bzw. die Gehirnbereiche müssen eine erhöhte Aktivität vorweisen \cite{BrainInt}.
 \newline
 Es muss darüber hinaus nicht nur der Benutzer an das System angepasst werden, sondern auch umgekehrt. Bei jeder Interaktion kann das System die Eigenheiten des Individuums besser erfassen, bessert Fehler aus und kann sich durch das ständige Mitlernen verbessern. 

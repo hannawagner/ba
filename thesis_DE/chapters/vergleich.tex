@@ -1,11 +1,11 @@
 \chapter{Gegenüberstellung der Methoden}
 \label{cha:Vergleich}
 
-In Kapitel ~\ref{cha:Ausgabe} wurden die verschiedenen Eingabemethoden näher erläutert. Dieses Kapitel beschäftigt sich damit, welche Vor- und Nachteile, gesonderte Rahmenbedingungen und welche Einsatzgebiete es zu den einzelnen Methoden gibt. Da der Fokus dieser Arbeit auf der Steuerung von Systemen liegt, wird in diesem Kapitel auf die verschiedenen Ausgabemethoden nicht eingegangen.
+In Kapitel ~\ref{cha:Ausgabe} wurden die verschiedenen Eingabemethoden näher erläutert. Dieses Kapitel beschreibt, welche Vor- und Nachteile, gesonderte Rahmenbedingungen und welche Einsatzgebiete es zu den einzelnen Methoden gibt. Da der Fokus dieser Arbeit auf der Steuerung von Systemen liegt, wird in diesem Kapitel auf die verschiedenen Ausgabemethoden nicht eingegangen.
 
 \section{Fördernde und hemmende Faktoren}
 %
-Jede einzelne Eingabemethode weist gewisse Pro- und Contraseiten auf. Es wurden verschiedene Kriterien für einen Vergleich definiert. Tab.~\ref{tab:matrixObj} zeigt die objektiven Kriterien, Tab.~\ref{tab:matrixSubj} stellt die subjektiven Kriterien dar.
+Jede einzelne Eingabemethode weist gewisse Pro- und Contraseiten auf. Für einen Vergleich wurden verschiedene Kriterien definiert. Tab.~\ref{tab:matrixObj} zeigt die objektiven Kriterien, Tab.~\ref{tab:matrixSubj} stellt die subjektiven Kriterien dar.
 \newline \newline
 Der erste Vergleichsfaktor, der in Tab.~\ref{tab:matrixObj} dargestellt ist, bezieht sich auf die Kosten. Bei der Sprachsteuerung gibt es verschiedene Sprachassistenten wie \zB Siri%
 \footnote{https://www.apple.com/ios/siri/}
@@ -13,35 +13,35 @@ Der erste Vergleichsfaktor, der in Tab.~\ref{tab:matrixObj} dargestellt ist, bez
  oder Cortana%
 \footnote{https://support.microsoft.com/en-us/help/17214}
 %
- , mit denen ein Computer zum Teil mit Hilfe der Sprache gesteuert werden kann. Die Programme ansich sind kostenlos, wenn der Benutzer über das jeweilige Gerät verfügt (IPhone etc. oder Computer mit Windows10).
-Wie in Abschnitt \label{cha:Augensteuerung} erklärt, werden für die Augensteuerung sowohl ein Eye-Tracking-System, als auch eine Software benötigt. Die in Abb.~\ref{fig:Tobii}(a) belaufen sich beispielsweise auf rund 13.500€, wobei hier noch die Kosten für die Software hinzukommen \cite{TobiiCosts}. Allerdings kann auch eine günstigere Variante implementiert werden. Hierbei benötigt man zwei Webcams (ca.100€) und eine Open Source Software für die Blickerkennung und Steuerung. Kinn- und Mundsteuerungen kosten zwischen 400€ und 2000€ \cite{SENSORY} \cite{INTEGRA}. Das Myo-Armband als Referenz für die Muskelsteuerung beläuft sich auf ca. 250€, wobei komplexere Systeme wesentlich teurer sind \cite{myoBand}. Das in Abb.~\ref{fig:epoc} dargestellte EPOC+, dass dem Benutzer erlaubt mit einem System mit Hilfe von Gehirnaktivität zu interagieren, kostet rund 720€.
+ , mit denen ein Computer zum Teil mit Hilfe der Sprache gesteuert werden kann. Die Programme ansich sind kostenlos, wenn der Benutzer über das entsprechende Gerät verfügt (iPhone etc. oder Computer mit Windows10).
+Wie in Abschnitt \label{cha:Augensteuerung} erklärt, werden für die Augensteuerung sowohl ein Eye-Tracking-System, als auch eine Software benötigt. Exklusive der Kosten für die Software belaufen sich die in Abb.~\ref{fig:Tobii}(a) dargestellten Tobii Pro Glasses 2 auf rund 13.500€ \cite{TobiiCosts}. Allerdings kann auch eine günstigere Variante implementiert werden. Hierbei benötigt man zwei Webcams (ca. 100€) und eine Open Source Software für die Blickerkennung und Steuerung. Kinn- und Mundsteuerungen kosten zwischen 400€ und 2000€ \cite{SENSORY} \cite{INTEGRA}. Das Myo Armband als Referenz für die Muskelsteuerung beläuft sich auf ca. 250€, wobei komplexere Systeme wesentlich teurer sind \cite{myoBand}. Das in Abb.~\ref{fig:epoc} dargestellte EPOC+, das dem Benutzer ermöglicht mit einem System mit Hilfe von Gehirnaktivität zu interagieren, kostet rund 720€.
 \newline \newline \newline \newline \newline
-Bei den meisten System gibt es keine räumliche Einschränkung und sie sind daher nicht an ein gewisses Setting gebunden. Bei der Benutzung einer Augensteuerung ist allerdings darauf zu achten, dass keine störenden Lichtquellen die Kamera bzw. die Interaktion behindern. Des weiteren ist ein Benutzer bei der Verwendung von Systemen, die durch die Gehirn- oder Muskelaktivität gesteuert werden, oft an notwendige Geräte und somit an gewisse Räumlichkeiten gebunden.
+Die meisten System weisen keine räumliche Einschränkung auf und sie sind daher nicht an ein gewisses Setting gebunden. Bei der Benutzung einer Augensteuerung ist allerdings darauf zu achten, dass keine störenden Lichtquellen die Kamera bzw. die Interaktion behindern. Des weiteren ist ein Benutzer bei der Verwendung von Systemen, die durch die Gehirn- oder Muskelaktivität gesteuert werden, oft an die notwendigen Geräte und somit an gewisse Räumlichkeiten gebunden.
 \newline \newline
-Die Größe und das Gewicht richten sich immer nach den Interaktionsgeräten der jeweiligen Eingabemethode. Für die Augensteuerung können beispielsweise die Geräte, die in Abb.~\ref{fig:Tobii} dargestellt sind, verwendet werden. Hier bewegt sich die Spanne von 312g für Tobii Pro Glasses 2 bis zu einem Gesamtgewicht von 8.9kg für die Eye-Tracker-Einheit und den Monitor des Tobii Pro Spectrum. Die Elektroden an sich, die die Basis für die Muskelsteuerung und die Steuerung mit Hilfe von Gehirnaktiviät darstellen sind an sich sehr klein und haben kaum ein Gewicht. Das Myo-Armband, das hier als Beispiel aufgefürt wird, ist nur 11,9 x 7,4 x 10,4 cm groß und 254g schwer. Während das EPOC+ des Unternehmens Emotiv mit 23 x 38 x 38 cm und 540g mehr als doppelt so groß und doppelt so schwer ist.
-\newline \newline
-Für die Benutzung jeder der verschiedenen Eingabemethoden gelten die selben Grundvoraussetzungen. Der Benutzer muss eine eigenständige Kontrolle über das jeweilige Eingabemittel (Sprache, Muskelanspannung, Augenbewegungen etc.) besitzen, damit eine Interaktion möglich ist. Zusätzlich gibt es spezifische Faktoren wie \zB ist bei der Sprachsteuerung eine laute und deutliche Sprache ein fördernder Faktor, hingegen erweisen sich verstaubte oder spiegelnde Brillengläser bei der Augensteuerung als ein hemmender Faktor.
+Die Größe und das Gewicht der Systeme richten sich immer nach den Interaktionsgeräten der jeweiligen Eingabemethode. Für die Augensteuerung können beispielsweise die Geräte, die in Abb.~\ref{fig:Tobii} dargestellt sind, verwendet werden. Hier bewegt sich die Spanne von 312g für Tobii Pro Glasses 2 bis zu einem Gesamtgewicht von 8.9kg für die Eye-Tracker-Einheit und den Monitor des Tobii Pro Spectrum. Die Elektroden an sich, die die Basis für die Muskelsteuerung und die Steuerung mit Hilfe von Gehirnaktiviät darstellen sind an sich sehr klein und haben kaum ein Gewicht. Das Myo Armband, das hier als Beispiel angeführt wird, ist nur 11,9 x 7,4 x 10,4 cm groß und 254g schwer. Während das EPOC+ des Unternehmens Emotiv mit 23 x 38 x 38 cm und 540g mehr als doppelt so groß und doppelt so schwer ist.
 \newline \newline
 Wie zu Beginn schon erwähnt, werden in Tab.~\ref{tab:matrixSubj} subjektive Faktoren als Vergleich der einzelnen Eingabemethoden verwendet.
 \newline \newline
-Die Dauer, wie lange ein Benutzer mit einem Computer interagieren kann, ist von System zu System sehr unterschiedlich. Da die Sprachsteuerung und die Gestensteuerung nur eine geringe kognitive und körperliche Anstrengung erfordern, gibt es bei der Benutzungsdauer kaum Einschränkungen. Im Gegensatz dazu findet man bei der Augensteuerung eine hohe körperliche Anstrengung und sollte daher nicht zu lange benutzt werden, damit die Augen langfristig nicht geschädigt werden. Ähnlich als bei der gewöhnlichen Benutzung eines Computers sollte alle 20 Minuten eine Pause eingelegt werden \cite{20Methode}. Das Benutzen einer Steuerung, die durch die Muskeln oder durch die Gehirnaktivität funktioniert, ist mit hoher kognitiven Anstrengung verbunden. Zusätzlich erfordert das Anspannen und Entspannen der Muskelpartien eine hohe körperliche Anstrengung. Aus diesen Gründen ist die Interaktionsdauer der beiden Methoden sehr beschränkt. Daher muss während der Interaktion regelmäßig überprüft werden, ob zum gegebenen Zeitpunkt eine Überanstrengung erfolgt. Ist dies der Fall sollte eine Pause eingelegt werden, um den einzelnen Partien eine Erholungsphase zu ermöglichen.
+Für die Benutzung jeder der verschiedenen Eingabemethoden gelten die selben Grundvoraussetzungen. Der Benutzer muss eine eigenständige Kontrolle über das jeweilige Eingabemittel (Sprache, Muskelanspannung, Augenbewegungen etc.) besitzen, damit eine Interaktion möglich ist. Zusätzlich gibt es Faktoren, die von Methode zu Methode unterschiedlich sind. So ist bei der Sprachsteuerung eine laute und deutliche Sprache ein fördernder Faktor, hingegen erweisen sich verstaubte oder spiegelnde Brillengläser bei der Augensteuerung als ein hemmender Faktor.
+\newline \newline
+Die Dauer, wie lange ein Benutzer mit einem Computer interagieren kann, ist von System zu System sehr unterschiedlich. Da die Sprachsteuerung und die Gestensteuerung nur eine geringe kognitive und körperliche Anstrengung erfordern, gibt es bei der Benutzungsdauer kaum Einschränkungen. Im Gegensatz dazu findet man bei der Augensteuerung eine hohe körperliche Anstrengung und sollte daher nicht zu lange eingesetzt werden, damit die Augen langfristig nicht geschädigt werden. Ähnlich wie bei der gewöhnlichen Benutzung eines Computers sollte alle 20 Minuten eine Pause eingelegt werden \cite{20Methode}. Das Benutzen einer Steuerung, die durch die Muskeln oder durch die Gehirnaktivität funktioniert, ist mit hoher kognitiven Anstrengung verbunden. Zusätzlich erfordert das Anspannen und Entspannen der Muskelpartien eine hohe körperliche Anstrengung. Aus diesen Gründen ist die Interaktionsdauer der beiden Methoden sehr beschränkt. Daher muss während der Interaktion regelmäßig überprüft werden, ob zum gegebenen Zeitpunkt eine Überanstrengung erfolgt. Ist dies der Fall, sollte eine Pause eingelegt werden, um den beanspruchten Partien eine Erholungsphase zu ermöglichen.
 \newline \newline \newline \newline
-Je nachdem wie lange mit einem System interagiert werden kann, hängt unter anderem von der kognitiven und körperlichen Anstrengung ab. Elisa Mira Holz u.a \cite{holz2013brain} verwendeten ein BCI-System, mit dem es möglich ist 4-gewinnt zu spielen. Anschließend wurde eine Evaluation zur Einschätzung der subjektive Arbeitsbelastung nach dem NASA-TLX-Fragebogen durchgeführt. Es konnte festgestellt werden, dass eine geringe körperliche und eine hohe kognitive Anstrengung besteht. Alle anderen Eingabemethoden wurden anhand der Ergebnisse dieser Studie abgeleitet. Die Steuerung durch Muskelaktivität erfordert eine hohe körperliche Anstrengung, da das Muskelan- und entspannen eine hohe Beanspruchung darstellt. Auch die kognitive Anstrengung ist hier sehr hoch, da sich der Benutzer zum einen sehr konzentrieren muss, um die Muskeln richtig einsetzten zu können, zum anderen ist diese Interaktionsart hinsichtlich der Bedienbarkeit gewöhnungsbedürftig. Im Vergleich zur kognitiven Anstrengung bei der Steuerung mit Hilfe von Gehirnsteuerung, gibt es bei den restlichen Eingabemethoden nur eine geringe Belastung. Da die Augen ein sehr empfindliches Sinnesorgan ist, und die Interaktionsdauer mit einem System beschränkt ist, wird hier eine hohe körperliche Anstrengung angeführt.
+Wie lange mit einem System interagiert werden kann, hängt unter anderem von der kognitiven und körperlichen Anstrengung ab. Elisa Mira Holz u.a \cite{holz2013brain} entwickelten ein BCI-Prototypen, mit dem es möglich ist mit Hilfe von Gehirnaktivität mit einem Computerspiel zu interagieren. Nach der Interaktion mit dem Prototypen wurde eine Evaluation zur Einschätzung der subjektive Arbeitsbelastung nach dem NASA-TLX-Fragebogen durchgeführt. Festgestellt wurde, dass nur eine geringe körperliche, jedoch aber eine hohe kognitive Anstrengung besteht. Alle anderen Eingabemethoden wurden anhand der Ergebnisse dieser Studie abgeleitet. Die Steuerung durch Muskelaktivität erfordert eine hohe körperliche Anstrengung, da das Muskelan- und entspannen eine hohe Beanspruchung darstellt. Auch die kognitive Anstrengung ist hier sehr hoch, weil sich der Benutzer zum einen sehr konzentrieren muss, um die Muskeln richtig einsetzten zu können, zum anderen ist diese Interaktionsart hinsichtlich der Bedienbarkeit gewöhnungsbedürftig. Im Vergleich zur kognitiven Anstrengung bei der Steuerung mit Hilfe von Gehirnsteuerung, gibt es bei den restlichen Eingabemethoden nur eine geringe Belastung. Da die Augen ein sehr empfindliches Sinnesorgan ist, und die Interaktionsdauer mit einem System beschränkt ist, wird hier eine hohe körperliche Anstrengung angeführt.
 \newline \newline
-Da das Sprechen eine sehr natürliche Form der Kommunikation ist, ist auch die Interaktion mit einem Gerät intuitiv. Ähnlich ist die Gestensteuerung, da das Bewegen des Joysticks in die einzelnen Richtungen sehr einfach und intuitiv ist. Gewöhnungsbedürftiger ist die Augensteuerung, da sich der Benutzer vermehrt konzentrieren muss und stets den Bildschirm fokussieren muss. Auf die Muskelsteuerung und die Steuerung mit Hilfe von Gehirnaktivität sind gewöhnungsbedürftig, da diese Interaktionsformen keine gewohnte Art der Kommunikation darstellen und mit hoher kognitiven Anstrengung verbunden sind.
+Weil das Sprechen eine sehr natürliche Form der Kommunikation ist, ist auch die Interaktion mit einem Gerät intuitiv. Ähnlich kann über die Gestensteuerung gesagt werden, da das Bewegen des Joysticks in die einzelnen Richtungen sehr einfach und intuitiv ist. Gewöhnungsbedürftiger für den Benutzer ist die Augensteuerung, da er sich wesentlich mehr konzentrieren und stets den Bildschirm fokussieren muss. Auch die Muskelsteuerung und die Steuerung mit Hilfe von Gehirnaktivität sind gewöhnungsbedürftig, da diese Interaktionsformen keine vertraute Art der Kommunikation darstellen und mit hoher kognitiven Anstrengung verbunden sind.
 \newline \newline
-Bevor ein Benutzer mit einem System interagieren kann, muss ein Gerät oft individuell angepasst (kalibriert) werden. Dies ist bei allen beschriebenen Eingabemethoden, ausschließlich der Gestensteuerung, der Fall. Bei der Sprachsteuerung ist die Kalibrierung von System zu System verschieden, allerdings ist der Zeitaufwand hier sehr gering. Da die Verwendung einer Muskelsteuerung oder einer Steuerung durch die Gehirnaktivität durch Trial und Error geprägt ist, ist auch die Kalibrierung zu Beginn und vor jeder Benutzung sehr aufwendig.
+Bevor ein Benutzer mit einem System interagieren kann, muss ein Gerät oft individuell angepasst (kalibriert) werden. Dies ist bei allen beschriebenen Eingabemethoden, ausschließlich der Gestensteuerung, der Fall. Bei der Sprachsteuerung ist die Kalibrierung von System zu System verschieden, allerdings nur mit einem sehr geringen Zeitaufwand verbunden. Da die Verwendung einer Muskelsteuerung oder einer Steuerung durch die Gehirnaktivität durch Trial und Error geprägt ist, erfordert auch die Kalibrierung zu Beginn und vor jeder Benutzung einen größeren Aufwand.
 \newpage
 %
 %first one
 \begin{longtable}{|p{1.8cm}|p{1.3cm}|p{1.8cm}|p{1.6cm}|p{1.5cm}|p{1.7cm}|p{2cm}|}
-\caption{Objektive Faktoren der Eingabemethoden}\\
+\caption{Objektive Kriterien der Eingabemethoden}\\
 \hline
 \textbf{ } & \textbf{Kosten} & \textbf{Räumlich- keiten} & \textbf{Größe} & \textbf{Gewicht} & \textbf{Wartung und Reinigung} & \textbf{Grund- voraussetzung}\\
 \hline
 \endfirsthead
 \multicolumn{7}{c}%
-{\tablename\ \thetable\ -- \textit{Objektive Faktoren der Eingabemethoden}} \\
+{\tablename\ \thetable\ -- \textit{Objektive Kriterien der Eingabemethoden}} \\
 \hline
 \textbf{ } & \textbf{Kosten} & \textbf{Räumlich- keiten} & \textbf{Größe} & \textbf{Gewicht} & \textbf{Wartung und Reinigung} & \textbf{Grund- voraussetzung}\\
 \hline
@@ -50,24 +50,24 @@ Bevor ein Benutzer mit einem System interagieren kann, muss ein Gerät oft indiv
 \endfoot
 \hline
 \endlastfoot
-\textbf{Sprach- steuerung}&je nach Anwendungsfall&keine Einschränkung&Mikro- phons- und Interaktionsgerätsgröße&kein zusätzliches Gewicht&Wartung, wenn sich die Stimme verändert&klare Sprache\\ \hline
+\textbf{Sprach- steuerung}&je nach Anwendungsfall&keine Einschränkung&Mikro- phons- und Interaktionsgerätsgröße&kein zusätzliches Gewicht&Wartung, wenn sich die Stimme verändert&klare \newline Sprache\\ \hline
 \textbf{Augen- steuerung}&100-13.500€&drinnen&richtet sich nach Interaktionsgerät&312g bis 8.9kg&nein&kontrollierte Augenbewegungen\\ \hline
-\textbf{Gesten- steuerung}&400-2000€&keine Einschränkung&Fausgroß und größer&gering (Gewicht des Joysticks)&Reinigung bei Mundsteuerung&kontrollierte Bewegungen der einzelnen Körperteile\\ \hline
-\textbf{Muskel- steuerung}&250€&Myo-Armband keine Einschränkung&Myo-Armband: 11,9 x 7,4 x 10,4 cm&Myo-Armband: 254g&nein&Kontrolle über Muskelan- und entspannungen\\ \hline
-\textbf{Steuerung durch Gehirn- aktivität}&720€&EPOC+ keine Einschränkung&EPOC+: 23 x 38 x 38 cm&EPOC+: 540g&nein&Selbssttändi- ge Aktivierung der Signale
+\textbf{Gesten- steuerung}&400-2000€&keine Einschränkung&fausgroß und größer&gering (Gewicht des Joysticks)&Reinigung bei Mundsteuerung&kontrollierte Bewegungen der einzelnen Körperteile\\ \hline
+\textbf{Muskel- steuerung}&250€&Myo-Armband keine Einschränkung&Myo-Armband: 11.9 x 7.4 x 10.4 cm&Myo-Armband: 254g&nein&Kontrolle über Muskelan- und entspannungen\\ \hline
+\textbf{Steuerung durch Gehirn- aktivität}&720€&EPOC+ keine Einschränkung&EPOC+: 23 x 38 x 38 cm&EPOC+: 540g&nein&selbssttändi- ge Aktivierung der Signale
 \label{tab:matrixObj} 
 \end{longtable}
 %
 \newpage
 %%second one
 \begin{longtable}{|p{1.8cm}|p{1.65cm}|p{1.1cm}|p{1.3cm}|p{1.5cm}|p{0.95cm}|p{3.4cm}|}
-\caption{Subjektive Faktoren der Eingabemethoden}\\
+\caption{Subjektive Kriterien der Eingabemethoden}\\
 \hline
 \textbf{ } & \textbf{Dauer} & \textbf{Kogni- tive Anstrengung} & \textbf{Körper- liche Anstrengung} & \textbf{UX} & \textbf{Kali- brierung} & \textbf{Sonstiges}\\
 \hline
 \endfirsthead
 \multicolumn{7}{c}%
-{\tablename\ \thetable\ -- \textit{Subjektive Faktoren der Eingabemethoden}} \\
+{\tablename\ \thetable\ -- \textit{Subjektive Kriterien der Eingabemethoden}} \\
 \hline
 \textbf{ } & \textbf{Dauer} & \textbf{Kogni- tive Anstrengung} & \textbf{Körper- liche Anstrengugn} & \textbf{UX} & \textbf{Kali- brierung} & \textbf{Sonstiges}\\
 \hline
@@ -76,10 +76,10 @@ Bevor ein Benutzer mit einem System interagieren kann, muss ein Gerät oft indiv
 \endfoot
 \hline
 \endlastfoot
-\textbf{Sprach- steuerung}&keine Einschränkung&niedrig&keine&intuitiv&teils&laut und deutlich sprechen, normale Sprechgeschwindigkeit, keine zu Große Distanz zum Mikrophon\\ \hline
-\textbf{Augen- steuerung}&beschränkt&niedrig&hoch&gewöh- nungsbedürftig&ja&Kritisch bei Brille und unterschiedlichen Profilen\\ \hline
-\textbf{Gesten- steuerung}&keine Einschränkung&niedrig&niedrig&intuitiv&teils&Genaue Anpassung bei ruckartigen Bewegungen\\ \hline
-\textbf{Muskel- steuerung}&beschränkt&hoch&hoch&gewöh- nungsbedürftig&ja&Genaue Positionierung der Elektroden\\ \hline
+\textbf{Sprach- steuerung}&keine Einschränkung&niedrig&keine&intuitiv&teils&laut und deutlich sprechen, normale Sprechgeschwindig- keit, keine zu große Distanz zum Mikrophon\\ \hline
+\textbf{Augen- steuerung}&beschränkt&niedrig&hoch&gewöh- nungsbedürftig&ja&kritisch bei Brille und unterschiedlichen Profilen\\ \hline
+\textbf{Gesten- steuerung}&keine Einschränkung&niedrig&niedrig&intuitiv&teils&genaue Anpassung bei ruckartigen Bewegungen\\ \hline
+\textbf{Muskel- steuerung}&beschränkt&hoch&hoch&gewöh- nungsbedürftig&ja&genaue Positionierung der Elektroden\\ \hline
 \textbf{Steuerung durch Gehirn- aktivität}&beschränkt&hoch&niedrig&gewöh- nungsbedürftig&ja&messbare Gehirnsignale über 3.5 Hz
 \label{tab:matrixSubj} 
 \end{longtable}
